@@ -1,0 +1,1296 @@
+
+<!DOCTYPE html>
+<!--
+    _/    _/  _/    _/    _/_/    _/      _/
+   _/  _/    _/    _/  _/    _/  _/_/    _/
+  _/_/      _/_/_/_/  _/_/_/_/  _/  _/  _/
+ _/  _/    _/    _/  _/    _/  _/    _/_/
+_/    _/  _/    _/  _/    _/  _/      _/
+
+      _/_/      _/_/_/    _/_/    _/_/_/    _/_/_/_/  _/      _/  _/      _/
+   _/    _/  _/        _/    _/  _/    _/  _/        _/_/  _/_/    _/  _/
+  _/_/_/_/  _/        _/_/_/_/  _/    _/  _/_/_/    _/  _/  _/      _/
+ _/    _/  _/        _/    _/  _/    _/  _/        _/      _/      _/
+_/    _/    _/_/_/  _/    _/  _/_/_/    _/_/_/_/  _/      _/      _/
+
+Interested in working with us? See https://www.khanacademy.org/careers.
+Just peeking under the hood? Try starting with window.KA and window.Khan :D
+-->
+<!--[if IE]><![endif]-->
+<html lang="en"
+      itemscope itemtype="http://schema.org/Organization"
+      xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:og="http://opengraphprotocol.org/schema/"
+      xmlns:fb="http://www.facebook.com/2008/fbml"  >
+      <head prefix="og: http://ogp.me/ns# khanacademy:
+                        http://ogp.me/ns/apps/khanacademy#">
+        
+        
+        <!--[if lte IE 7]><script src="/javascript/ie-warning.js"></script><script>window.onload=function(){e("/images/ie-warning/")}</script><![endif]-->
+        
+<script type="text/javascript">
+    // TODO: Sweep below into KA
+    // TODO: Change USERNAME var since it is actually the user's nickname
+    
+    window.FB_APP_ID = '160249463991765';
+    window.USERNAME = '';
+
+    window.KA = {
+        version: "0518-e5aeeac941e5.375910923670344207",
+        isMobileCapable: false,
+        isIPad: false,
+        useKatex: true,
+        vipIssueReporter: null,
+        // TODO(eater): Remove after clues are fully launched
+        allowEditingClues: false,
+
+        "FB_APP_NAMESPACE": "khanacademy",
+        
+        userProfileModel_: null,
+        getUserProfile: function() {
+            
+            return KA.userProfileModel_;
+        },
+
+        setUserProfile: function(attrs) {
+            if (!KA.userProfileModel_) {
+                var ProfileModel = KAdefine.require(
+                    "./javascript/shared-package/profile-model.js");
+                KA.userProfileModel_ = new ProfileModel(attrs);
+            }
+            KA.userProfileModel_.set(attrs);
+            return KA.userProfileModel_;
+        },
+
+        getUserID: function() {
+            
+            return null;
+            
+        },
+        isPhantom: function() {
+            var profile = KA.getUserProfile();
+            // The user is pre-phantom if there is no profile, so we
+            // include it in this check.
+            return !profile || profile.get("isPhantom");
+        },
+        isDeveloper: function() {
+            var profile = KA.getUserProfile();
+            return profile && profile.get("isDeveloper");
+        },
+        currentServerTime: function() {
+            return 1400471794.4180601;
+        },
+        commitSHA: "75191f662665b621c5e32f3c064076d8f4f2da48",
+        loginUrl: "/login?continue=%2Fmath%2Fearly-math%2Fcc-early-math-add-sub-topic%2Fbasic-addition-subtraction%2Fv%2Faddition-introduction",
+        
+        language: "en",
+        languageForYoutube: "en",
+        languageLocalName: "English",
+        languageIsRtl: false,
+        currentPageName: "Introduction to addition | Basic addition and subtraction |\u000AKhan Academy",
+        MAX_BIO_LENGTH: 160,
+
+        // Whether we should show prerequisites for missions
+        SHOW_PREREQS_CONDITION: true,
+
+        SHOW_PREREQS_FOR_ADVANCED_MISSIONS: false,
+
+        // <GANDALF_COMMUNITY_SUPPORT>
+        GANDALF_COMMUNITY_SUPPORT: false,
+        // </GANDALF_COMMUNITY_SUPPORT>
+
+        GOLDILOCKS_CONDITION: false,
+
+        GANDALF_VIDEOTASK_PROGRESS: false
+    };
+</script>
+
+        
+
+        
+
+        <title>Introduction to addition | Basic addition and subtraction |
+Khan Academy</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="description" content="Description" />
+        
+        <meta name="keywords" content="" />
+        
+        
+        <meta name="sailthru.tags" content=", cc-early-math-add-sub-topic, basic-addition-subtraction, math, early-math" />
+        
+
+        
+        <link rel="canonical" href="https://www.khanacademy.org/math/early-math/cc-early-math-add-sub-topic/basic-addition-subtraction/v/addition-introduction">
+
+        
+
+
+
+        
+        
+            <meta name="fragment" content="!">
+        
+
+        <meta property="fb:app_id" content="160249463991765"/>
+        <meta property="fb:admins" content="100000121497109,1305017,100001572496923"/> 
+        <meta property="og:site_name" content="Khan Academy"/>
+        
+        <meta property="og:type" content="video.other" />
+        <meta property="og:title" content="Introduction to addition" />
+        <meta property="og:description" content="Description" />
+        <meta property="og:url" content="https://www.khanacademy.org/math/early-math/cc-early-math-add-sub-topic/basic-addition-subtraction/v/addition-introduction">
+        <meta property="og:image" content="http://img.youtube.com/vi/fsTD_jqseBA/0.jpg" />
+        <meta property="og:video" content="http://www.youtube.com/v/fsTD_jqseBA">
+        <meta property="og:video:type" content="application/x-shockwave-flash">
+        <meta name="title" content="Introduction to addition" />
+        <meta name="description" content="Description" />
+        <meta name="video_type" content="application/x-shockwave-flash" />
+
+        <link rel="image_src" href="https://img.youtube.com/vi/fsTD_jqseBA/0.jpg" />
+        <link rel="video_src" href="https://www.youtube.com/embed/fsTD_jqseBA" />
+
+
+        <meta name="twitter:site" content="@khanacademy">
+        <meta name="twitter:title" content="Khan Academy">
+        <meta name="twitter:description" content="Learn for free about math, art, computer programming, economics, physics, chemistry, biology, medicine, finance, history, and more. Khan Academy is a nonprofit with the mission of providing a free, world-class education for anyone, anywhere.">
+        <meta name="twitter:image" content="https://www.kastatic.org/images/khan-logo-vertical-transparent.png">
+        
+
+        <meta itemprop="name" content="Khan Academy">
+        <meta itemprop="description" content="Watch. Practice. Learn almost anything for free.">
+        <meta itemprop="image" content="https://www.kastatic.org/images/khan-logo-vertical-transparent.png">
+        
+
+        <link rel="shortcut icon" href="https://www.kastatic.org/favicon.ico?leaf">
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://www.kastatic.org/images/apple-touch-icon-57x57-precomposed.png"/>
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.kastatic.org/images/apple-touch-icon-72x72-precomposed.png"/>
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.kastatic.org/images/apple-touch-icon-114x114-precomposed.png"/>
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.kastatic.org/images/apple-touch-icon-144x144-precomposed.png"/>
+
+        
+            
+            
+            
+    
+    <link rel='stylesheet' type='text/css' href='https://www.kastatic.org/genfiles/stylesheets/en/shared-package-e29bf842e3deeba64e56449b9490f40a.css'>
+    <link rel='stylesheet' type='text/css' href='https://www.kastatic.org/genfiles/stylesheets/en/nav-package-bc6cbe2d69fd9d2bc5fc205fac8d6896.css'>
+    <link rel='stylesheet' type='text/css' href='https://www.kastatic.org/genfiles/stylesheets/en/tutorial-package-98548a592b4f7fd36bcaf4c1e3bea2d1.css'>
+
+    
+
+    <link rel='stylesheet' type='text/css' href='https://www.kastatic.org/genfiles/stylesheets/en/video-package-e8e82101de78002bb9d174ea3a312598.css'>
+    <link rel='stylesheet' type='text/css' href='https://www.kastatic.org/genfiles/stylesheets/en/discussion-package-6de84e23f59156238fb0c763757128d5.css'>
+    <link rel='stylesheet' type='text/css' href='https://www.kastatic.org/genfiles/stylesheets/en/clarifications-package-b0e46b1a926ad4ffc895eca0dc8342c6.css'>
+    <link rel='stylesheet' type='text/css' href='https://www.kastatic.org/genfiles/stylesheets/en/moderation-package-d87c5fe5517e712e781037a4bcee78f6.css'>
+
+    <link rel='stylesheet' type='text/css' href='https://www.kastatic.org/genfiles/stylesheets/en/exercises-package-f6aa530a21494ab5a32242f961a7adbf.css'>
+    <link rel='stylesheet' type='text/css' href='https://www.kastatic.org/genfiles/stylesheets/en/exercise-content-package-d33b319c7feb923e30bd97fa38e19394.css'>
+    <link rel='stylesheet' type='text/css' href='https://www.kastatic.org/genfiles/stylesheets/en/katex-package-eab5bf7b3a7d8f87d0ae613d01046b47.css'>
+
+        
+
+        
+
+    <script type="text/javascript">
+      
+      window._qf = [];
+      var $ = function(f) { _qf.push(f); };
+
+      
+
+      window._gaq = window._gaq || [];_gaq.push(['_setAccount', 'UA-6742635-1']);
+      _gaq.push(['_setDomainName', '.khanacademy.org']);
+      
+      _gaq.push(['_setCustomVar', 1, "User Type", "New", 1]);
+      
+      _gaq.push(['_setCustomVar', 4, "experiments", "b1:c0:", 3]);
+      
+      _gaq.push(['_setCustomVar', 5, "URI Route", "main:/(.*)", 3]);
+      
+      _gaq.push(['_trackPageview']);
+
+      window._initialPageTime = (new Date()).getTime(); // For page load time tracking</script>
+    </head>
+    <!--[if lt IE 7]>  <body class="ie ie6 lte9 lte8 lte7 lang-en " > <![endif]-->
+<!--[if IE 7]>     <body class="ie ie7 lte9 lte8 lte7 lang-en " > <![endif]-->
+<!--[if IE 8]>     <body class="ie ie8 lte9 lte8 lang-en " > <![endif]-->
+<!--[if IE 9]>     <body class="ie ie9 lte9 lang-en " > <![endif]-->
+<!--[if gt IE 9]>  <body class="lang-en " > <![endif]-->
+<!--[if !IE]><!--> <body class="lang-en " > <!--<![endif]-->
+    <div class="external-styles-missing" style='
+        background: #f2dede;
+        font: 14px "Helvetica Neue", Arial, Helvetica;
+        margin-bottom: 40px;
+        padding: 10px 20px;
+    '>
+        <p>If you&#39;re seeing this message, it means we&#39;re having trouble loading external resources for Khan Academy.</p>
+        <p>
+            
+            If you're behind a web filter, please make sure that the domains <strong>*.kastatic.org</strong> and <strong>*.kasandbox.org</strong> are unblocked.
+            <script>
+                // If their computer clock is off by more than a day, complain
+                // about that too (causes SSL problems)
+                if (Math.abs(KA.currentServerTime() - new Date() / 1000) >= 60 * 60 * 24) {
+                    document.write("If you're still having trouble, please check your computer's clock and make sure that today's date is properly set.");
+                }
+            </script>
+            
+        </p>
+    </div>
+    <div id="outer-wrapper" class="clearfix new-header homepage-pure-signup">
+    <div id="top-header-container">
+        <div id="top-header" class="new">
+            <span id="page_auth">
+    <div id="search-box">
+        <form class="page-search" action="/search" autocomplete="off">
+            <div class="typeahead-search">
+                <input id="search-input" type="text" placeholder="Search" name="page_search_query" value='' class="ui-corner-all placeholder show-demo-dialog simple-input search-input blur-on-esc" /><input type="submit" value=" " class="search-submit" />
+                <i class="icon-search"></i>
+            </div>
+        </form>
+    </div>
+
+    
+    <span id="user-info">
+    
+        <a href="/login?continue=%2Fmath%2Fearly-math%2Fcc-early-math-add-sub-topic%2Fbasic-addition-subtraction%2Fv%2Faddition-introduction" class="log-in-link ellipsis ">Log in</a>
+        
+            <a href="/signup?continue=%2Fmath%2Fearly-math%2Fcc-early-math-add-sub-topic%2Fbasic-addition-subtraction%2Fv%2Faddition-introduction" class="sign-up-link ellipsis">Sign up</a>
+        
+    
+    
+    </span>
+</span>
+<nav class="sitewide-navigation">
+    <span class="links nav-subheader">
+        <span class="dropdown topic-browser-dropdown">
+            <a class="watch-link dropdown-toggle show-demo-dialog" href="#">Learn <i class="icon-chevron-down"></i></a>
+            
+
+
+<ul class="topic-browser-menu dropdown-menu new none-active" data-role="listview" data-inset="true">
+
+  
+  <li>
+    
+      <a href="/" class="menulink">Home</a>
+    
+  </li>
+  <li>
+    <a href="/exercisedashboard" class="menulink">Knowledge Map</a>
+  </li>
+  <li class="has-divider"></li>
+
+  
+  
+    
+      <li class="level0 has-submenu">
+        <a data-tag="TopicBrowserPulldown" class="menulink" href="#">Math
+        <i class="icon-chevron-right"></i>
+        <i class="icon-chevron-left"></i>
+        </a>
+        <div class="dropdown-menu no-submenus sub-menu-custom math domain-color">
+          <div class="submenu-title"><a href="/math" class="topic-link">Math</a><a href="/exercisedashboard" class="km-link">Knowledge Map</a></div>
+          <ul class="clearfix">
+          
+            <li class="level1 math ">
+              <a href="/math/early-math" data-tag="TopicBrowserPulldown" class="menulink">Early math</a>
+            </li>
+          
+            <li class="level1 math ">
+              <a href="/math/trigonometry" data-tag="TopicBrowserPulldown" class="menulink">Trigonometry</a>
+            </li>
+          
+            <li class="level1 math ">
+              <a href="/math/cc-third-grade-math" data-tag="TopicBrowserPulldown" class="menulink">3rd grade (U.S.)</a>
+            </li>
+          
+            <li class="level1 math ">
+              <a href="/math/probability" data-tag="TopicBrowserPulldown" class="menulink">Probability and statistics</a>
+            </li>
+          
+            <li class="level1 math ">
+              <a href="/math/cc-fourth-grade-math" data-tag="TopicBrowserPulldown" class="menulink">4th grade (U.S.)</a>
+            </li>
+          
+            <li class="level1 math ">
+              <a href="/math/precalculus" data-tag="TopicBrowserPulldown" class="menulink">Precalculus</a>
+            </li>
+          
+            <li class="level1 math ">
+              <a href="/math/cc-fifth-grade-math" data-tag="TopicBrowserPulldown" class="menulink">5th grade (U.S.)</a>
+            </li>
+          
+            <li class="level1 math ">
+              <a href="/math/differential-calculus" data-tag="TopicBrowserPulldown" class="menulink">Differential calculus</a>
+            </li>
+          
+            <li class="level1 math ">
+              <a href="/math/cc-sixth-grade-math" data-tag="TopicBrowserPulldown" class="menulink">6th grade (U.S.)</a>
+            </li>
+          
+            <li class="level1 math ">
+              <a href="/math/integral-calculus" data-tag="TopicBrowserPulldown" class="menulink">Integral calculus</a>
+            </li>
+          
+            <li class="level1 math ">
+              <a href="/math/cc-seventh-grade-math" data-tag="TopicBrowserPulldown" class="menulink">7th grade (U.S.)</a>
+            </li>
+          
+            <li class="level1 math ">
+              <a href="/math/multivariable-calculus" data-tag="TopicBrowserPulldown" class="menulink">Multivariable calculus</a>
+            </li>
+          
+            <li class="level1 math ">
+              <a href="/math/cc-eighth-grade-math" data-tag="TopicBrowserPulldown" class="menulink">8th grade (U.S.)</a>
+            </li>
+          
+            <li class="level1 math ">
+              <a href="/math/differential-equations" data-tag="TopicBrowserPulldown" class="menulink">Differential equations</a>
+            </li>
+          
+            <li class="level1 math ">
+              <a href="/math/arithmetic" data-tag="TopicBrowserPulldown" class="menulink">Arithmetic and pre-algebra</a>
+            </li>
+          
+            <li class="level1 math ">
+              <a href="/math/linear-algebra" data-tag="TopicBrowserPulldown" class="menulink">Linear algebra</a>
+            </li>
+          
+            <li class="level1 math ">
+              <a href="/math/algebra" data-tag="TopicBrowserPulldown" class="menulink">Algebra I</a>
+            </li>
+          
+            <li class="level1 math ">
+              <a href="/math/applied-math" data-tag="TopicBrowserPulldown" class="menulink">Applied math</a>
+            </li>
+          
+            <li class="level1 math ">
+              <a href="/math/geometry" data-tag="TopicBrowserPulldown" class="menulink">Geometry</a>
+            </li>
+          
+            <li class="level1 math ">
+              <a href="/math/recreational-math" data-tag="TopicBrowserPulldown" class="menulink">Recreational math</a>
+            </li>
+          
+            <li class="level1 math ">
+              <a href="/math/algebra2" data-tag="TopicBrowserPulldown" class="menulink">Algebra II</a>
+            </li>
+          
+            <li class="level1 math ">
+              <a href="/math/competition-math" data-tag="TopicBrowserPulldown" class="menulink">Math contests</a>
+            </li>
+          
+          </ul>
+        </div>
+      </li>
+    
+  
+    
+      <li class="level0 has-submenu">
+        <a data-tag="TopicBrowserPulldown" class="menulink" href="#">Science 
+        <i class="icon-chevron-right"></i>
+        <i class="icon-chevron-left"></i>
+        </a>
+        <div class="dropdown-menu no-submenus sub-menu-custom science domain-color">
+          <div class="submenu-title">Science </div>
+          <ul class="clearfix">
+          
+            <li class="level1 science ">
+              <a href="/science/biology" data-tag="TopicBrowserPulldown" class="menulink">Biology</a>
+            </li>
+          
+            <li class="level1 science ">
+              <a href="/science/cosmology-and-astronomy" data-tag="TopicBrowserPulldown" class="menulink">Cosmology and astronomy</a>
+            </li>
+          
+            <li class="level1 science ">
+              <a href="/science/physics" data-tag="TopicBrowserPulldown" class="menulink">Physics</a>
+            </li>
+          
+            <li class="level1 science ">
+              <a href="/science/health-and-medicine" data-tag="TopicBrowserPulldown" class="menulink">Health and medicine</a>
+            </li>
+          
+            <li class="level1 science ">
+              <a href="/science/chemistry" data-tag="TopicBrowserPulldown" class="menulink">Chemistry</a>
+            </li>
+          
+            <li class="level1 science ">
+              <a href="/science/discoveries-projects" data-tag="TopicBrowserPulldown" class="menulink">Discoveries and projects</a>
+            </li>
+          
+            <li class="level1 science ">
+              <a href="/science/organic-chemistry" data-tag="TopicBrowserPulldown" class="menulink">Organic chemistry</a>
+            </li>
+          
+          </ul>
+        </div>
+      </li>
+    
+  
+    
+      <li class="level0 has-submenu">
+        <a data-tag="TopicBrowserPulldown" class="menulink" href="#">Economics and finance
+        <i class="icon-chevron-right"></i>
+        <i class="icon-chevron-left"></i>
+        </a>
+        <div class="dropdown-menu no-submenus sub-menu-custom economics-finance-domain domain-color">
+          <div class="submenu-title">Economics and finance</div>
+          <ul class="clearfix">
+          
+            <li class="level1 economics-finance-domain ">
+              <a href="/economics-finance-domain/microeconomics" data-tag="TopicBrowserPulldown" class="menulink">Microeconomics</a>
+            </li>
+          
+            <li class="level1 economics-finance-domain ">
+              <a href="/economics-finance-domain/core-finance" data-tag="TopicBrowserPulldown" class="menulink">Finance and capital markets</a>
+            </li>
+          
+            <li class="level1 economics-finance-domain ">
+              <a href="/economics-finance-domain/macroeconomics" data-tag="TopicBrowserPulldown" class="menulink">Macroeconomics</a>
+            </li>
+          
+            <li class="level1 economics-finance-domain ">
+              <a href="/economics-finance-domain/entrepreneurship2" data-tag="TopicBrowserPulldown" class="menulink">Entrepreneurship</a>
+            </li>
+          
+          </ul>
+        </div>
+      </li>
+    
+  
+    
+      <li class="level0 has-submenu">
+        <a data-tag="TopicBrowserPulldown" class="menulink" href="#">Arts and humanities
+        <i class="icon-chevron-right"></i>
+        <i class="icon-chevron-left"></i>
+        </a>
+        <div class="dropdown-menu no-submenus sub-menu-custom humanities domain-color">
+          <div class="submenu-title">Arts and humanities</div>
+          <ul class="clearfix">
+          
+            <li class="level1 humanities ">
+              <a href="/humanities/history" data-tag="TopicBrowserPulldown" class="menulink">History</a>
+            </li>
+          
+            <li class="level1 humanities ">
+              <a href="/humanities/american-civics-subject" data-tag="TopicBrowserPulldown" class="menulink">American civics</a>
+            </li>
+          
+            <li class="level1 humanities ">
+              <a href="/humanities/art-history" data-tag="TopicBrowserPulldown" class="menulink">Art history</a>
+            </li>
+          
+            <li class="level1 humanities ">
+              <a href="/humanities/philosophy" data-tag="TopicBrowserPulldown" class="menulink">Philosophy</a>
+            </li>
+          
+          </ul>
+        </div>
+      </li>
+    
+  
+    
+      <li class="level0 has-submenu">
+        <a data-tag="TopicBrowserPulldown" class="menulink" href="#">Computing
+        <i class="icon-chevron-right"></i>
+        <i class="icon-chevron-left"></i>
+        </a>
+        <div class="dropdown-menu no-submenus sub-menu-custom computing domain-color">
+          <div class="submenu-title">Computing</div>
+          <ul class="clearfix">
+          
+            <li class="level1 computing ">
+              <a href="/computing/cs" data-tag="TopicBrowserPulldown" class="menulink">Computer programming</a>
+            </li>
+          
+            <li class="level1 computing ">
+              <a href="/computing/computer-science" data-tag="TopicBrowserPulldown" class="menulink">Computer science</a>
+            </li>
+          
+          </ul>
+        </div>
+      </li>
+    
+  
+    
+      <li class="level0 has-submenu">
+        <a data-tag="TopicBrowserPulldown" class="menulink" href="#">Test prep
+        <i class="icon-chevron-right"></i>
+        <i class="icon-chevron-left"></i>
+        </a>
+        <div class="dropdown-menu no-submenus sub-menu-custom test-prep domain-color">
+          <div class="submenu-title">Test prep</div>
+          <ul class="clearfix">
+          
+            <li class="level1 test-prep ">
+              <a href="/test-prep/sat" data-tag="TopicBrowserPulldown" class="menulink">SAT </a>
+            </li>
+          
+            <li class="level1 test-prep ">
+              <a href="/test-prep/cahsee-subject" data-tag="TopicBrowserPulldown" class="menulink">CAHSEE</a>
+            </li>
+          
+            <li class="level1 test-prep ">
+              <a href="/test-prep/mcat" data-tag="TopicBrowserPulldown" class="menulink">MCAT</a>
+            </li>
+          
+            <li class="level1 test-prep ">
+              <a href="/test-prep/iit-jee-subject" data-tag="TopicBrowserPulldown" class="menulink">IIT JEE</a>
+            </li>
+          
+            <li class="level1 test-prep ">
+              <a href="/test-prep/gmat" data-tag="TopicBrowserPulldown" class="menulink">GMAT</a>
+            </li>
+          
+            <li class="level1 test-prep ">
+              <a href="/test-prep/ap-art-history" data-tag="TopicBrowserPulldown" class="menulink">AP Art history</a>
+            </li>
+          
+          </ul>
+        </div>
+      </li>
+    
+  
+    
+      <li class="level0 has-submenu">
+        <a data-tag="TopicBrowserPulldown" class="menulink" href="#">Partner content
+        <i class="icon-chevron-right"></i>
+        <i class="icon-chevron-left"></i>
+        </a>
+        <div class="dropdown-menu no-submenus sub-menu-custom partner-content domain-color">
+          <div class="submenu-title">Partner content</div>
+          <ul class="clearfix">
+          
+            <li class="level1 partner-content ">
+              <a href="/partner-content/MoMA" data-tag="TopicBrowserPulldown" class="menulink">The Museum of Modern Art</a>
+            </li>
+          
+            <li class="level1 partner-content ">
+              <a href="/partner-content/crash-course1" data-tag="TopicBrowserPulldown" class="menulink">Crash Course</a>
+            </li>
+          
+            <li class="level1 partner-content ">
+              <a href="/partner-content/getty-museum" data-tag="TopicBrowserPulldown" class="menulink">The J. Paul Getty Museum</a>
+            </li>
+          
+            <li class="level1 partner-content ">
+              <a href="/partner-content/stanford-medicine" data-tag="TopicBrowserPulldown" class="menulink">Stanford School of Medicine</a>
+            </li>
+          
+            <li class="level1 partner-content ">
+              <a href="/partner-content/CAS-biodiversity" data-tag="TopicBrowserPulldown" class="menulink">California Academy of Sciences</a>
+            </li>
+          
+            <li class="level1 partner-content ">
+              <a href="/partner-content/mit-k12" data-tag="TopicBrowserPulldown" class="menulink">MIT+K12</a>
+            </li>
+          
+            <li class="level1 partner-content ">
+              <a href="/partner-content/Exploratorium" data-tag="TopicBrowserPulldown" class="menulink">Exploratorium</a>
+            </li>
+          
+            <li class="level1 partner-content ">
+              <a href="/partner-content/lebron-asks-subject" data-tag="TopicBrowserPulldown" class="menulink">LeBron asks</a>
+            </li>
+          
+            <li class="level1 partner-content ">
+              <a href="/partner-content/asian-art-museum" data-tag="TopicBrowserPulldown" class="menulink">Asian Art Museum</a>
+            </li>
+          
+            <li class="level1 partner-content ">
+              <a href="/partner-content/brookings-institution" data-tag="TopicBrowserPulldown" class="menulink">The Brookings Institution</a>
+            </li>
+          
+            <li class="level1 partner-content ">
+              <a href="/partner-content/ssf-cci" data-tag="TopicBrowserPulldown" class="menulink">Silicon Schools Fund and Clayton Christensen Institute</a>
+            </li>
+          
+          </ul>
+        </div>
+      </li>
+    
+  
+    
+      <li class="level0">
+        <a href="/talks-and-interviews" data-tag="TopicBrowserPulldown" class="menulink">Talks and interviews</a>
+      </li>
+    
+  
+    
+      <li class="level0">
+        <a href="/coach-res" data-tag="TopicBrowserPulldown" class="menulink">Coach and classroom resources</a>
+      </li>
+    
+  
+
+  
+  <li class="has-divider"></li>
+  <li>
+    <a href="/library" data-tag="TopicBrowserPulldownBrowse" class="menulink">Browse all</a>
+  </li>
+</ul>
+
+
+            
+                <a href="/coach/reports" class=" no-menu coach-link">Coach</a>
+            
+
+            
+            
+            <a href="/about" class=" about-link no-menu show-demo-dialog">About</a>
+            <a href="/donate" class=" nav-link no-menu show-demo-dialog">Donate</a>
+            
+
+            <div style="clear: both"></div>
+        </span>
+    </span>
+</nav>
+<a id="header-logo" href="/" class="show-demo-dialog" title="Take me home!" data-tag="Header" aria-label="Khan Academy"><span class="logotype-khan">Khan</span><span class="logotype-academy">Academy</span></a>
+        </div>
+    </div>
+    
+    
+    <div id="page-container">
+    <div id="page-container-inner">
+        
+        <div id="fb-root"></div>
+            <header>
+                <nav id="page_sub_nav" class="clearfix">
+                    
+                    <b></b>
+                    
+                </nav>
+                
+                
+                
+            </header>
+            <noscript>
+            <div class="noscript-warning">
+            <p><i class="icon-warning-sign"></i> To log in and use all the features of Khan Academy, please enable JavaScript in your browser.</p>
+            </div>
+            </noscript>
+            
+            
+<div class="editor-status"></div>
+<article id="tutorial-page">
+    <div class="tutorial-nav live-version docked-nav" data-khan-nav="true">
+        <div class="topic-nav-header math">
+    <div class="crumbs">
+        
+        <div class="subject subject-color">
+            <a href="/math/early-math">Early math</a>
+        </div>
+        
+        
+        <div class="topic topic-color">
+            <a href="/math/early-math/cc-early-math-add-sub-topic">Addition and subtraction</a>
+        </div>
+        
+    </div>
+    <div class="crumbs tutorial-title">
+        <h2 class="title tutorial-color">
+            Basic addition and subtraction
+        </h2>
+    </div>
+</div>
+
+<div class="topic-nav-content math" data-khan-scroll="true">
+    <ol class="core">
+    
+        <li id="v/addition-introduction" class="tutorial-nav-node video-node">
+            <a href="/math/early-math/cc-early-math-add-sub-topic/basic-addition-subtraction/v/addition-introduction" class="tutorial-router-link tab-link  progress-container clearfix">
+                <div class="subway-icon vx7d5effb1">
+    <div class="pipe"></div>
+    <div class="pipe completed"></div>
+    <div class="status vx7d5effb1 video-node">
+    </div>
+</div>
+
+                
+                <span class="progress-title">Introduction to addition</span>
+            </a>
+        </li>
+    
+        <li id="e/addition_1" class="tutorial-nav-node exercise-node">
+            <a href="/math/early-math/cc-early-math-add-sub-topic/basic-addition-subtraction/e/addition_1" class="tutorial-router-link tab-link  progress-container clearfix">
+                <div class="subway-icon e3001">
+    <div class="pipe"></div>
+    <div class="pipe completed"></div>
+    <div class="status e3001 exercise-node">
+    </div>
+</div>
+
+                
+                <span class="progress-title">Addition within 5</span>
+            </a>
+        </li>
+    
+        <li id="v/subtraction-introduction" class="tutorial-nav-node video-node">
+            <a href="/math/early-math/cc-early-math-add-sub-topic/basic-addition-subtraction/v/subtraction-introduction" class="tutorial-router-link tab-link  progress-container clearfix">
+                <div class="subway-icon vx2fefc435">
+    <div class="pipe"></div>
+    <div class="pipe completed"></div>
+    <div class="status vx2fefc435 video-node">
+    </div>
+</div>
+
+                
+                <span class="progress-title">Introduction to subtraction</span>
+            </a>
+        </li>
+    
+        <li id="e/subtraction_1" class="tutorial-nav-node exercise-node">
+            <a href="/math/early-math/cc-early-math-add-sub-topic/basic-addition-subtraction/e/subtraction_1" class="tutorial-router-link tab-link  progress-container clearfix">
+                <div class="subway-icon e2003">
+    <div class="pipe"></div>
+    <div class="pipe completed"></div>
+    <div class="status e2003 exercise-node">
+    </div>
+</div>
+
+                
+                <span class="progress-title">Subtraction within 5</span>
+            </a>
+        </li>
+    
+        <li id="v/adding-fruit" class="tutorial-nav-node video-node">
+            <a href="/math/early-math/cc-early-math-add-sub-topic/basic-addition-subtraction/v/adding-fruit" class="tutorial-router-link tab-link  progress-container clearfix">
+                <div class="subway-icon vx041e77f7">
+    <div class="pipe"></div>
+    <div class="pipe completed"></div>
+    <div class="status vx041e77f7 video-node">
+    </div>
+</div>
+
+                
+                <span class="progress-title">Pieces of fruit</span>
+            </a>
+        </li>
+    
+        <li id="e/put-together" class="tutorial-nav-node exercise-node">
+            <a href="/math/early-math/cc-early-math-add-sub-topic/basic-addition-subtraction/e/put-together" class="tutorial-router-link tab-link  progress-container clearfix">
+                <div class="subway-icon exaa196ff0">
+    <div class="pipe"></div>
+    <div class="pipe completed"></div>
+    <div class="status exaa196ff0 exercise-node">
+    </div>
+</div>
+
+                
+                <span class="progress-title">Put together</span>
+            </a>
+        </li>
+    
+        <li id="e/take-apart" class="tutorial-nav-node exercise-node">
+            <a href="/math/early-math/cc-early-math-add-sub-topic/basic-addition-subtraction/e/take-apart" class="tutorial-router-link tab-link  progress-container clearfix">
+                <div class="subway-icon ex6cc2a895">
+    <div class="pipe"></div>
+    <div class="pipe completed"></div>
+    <div class="status ex6cc2a895 exercise-node">
+    </div>
+</div>
+
+                
+                <span class="progress-title">Take apart</span>
+            </a>
+        </li>
+    
+        <li id="v/making-5" class="tutorial-nav-node video-node">
+            <a href="/math/early-math/cc-early-math-add-sub-topic/basic-addition-subtraction/v/making-5" class="tutorial-router-link tab-link  progress-container clearfix">
+                <div class="subway-icon vx65eda1aa">
+    <div class="pipe"></div>
+    <div class="pipe completed"></div>
+    <div class="status vx65eda1aa video-node">
+    </div>
+</div>
+
+                
+                <span class="progress-title">Making 5</span>
+            </a>
+        </li>
+    
+        <li id="e/making-five" class="tutorial-nav-node exercise-node">
+            <a href="/math/early-math/cc-early-math-add-sub-topic/basic-addition-subtraction/e/making-five" class="tutorial-router-link tab-link  progress-container clearfix">
+                <div class="subway-icon ex442d4783">
+    <div class="pipe"></div>
+    <div class="pipe completed"></div>
+    <div class="status ex442d4783 exercise-node">
+    </div>
+</div>
+
+                
+                <span class="progress-title">Making five</span>
+            </a>
+        </li>
+    
+    </ol>
+
+    
+    <div class="tutorial-nav-next">
+        <div class="tutorial-nav-node">
+            <a href="/math/early-math/cc-early-math-add-sub-topic/cc-early-math-add-subtract-10" class="tab-link clearfix">
+            <div class="tutorial-nav-next-left">
+                <span class="icon-chevron-right"></span>
+            </div>
+            <div class="tutorial-nav-next-right">
+                <span>Next section:</span><br>
+                <span>Addition and subtraction within 10</span>
+            </div>
+            </a>
+        </div>
+    </div>
+    
+
+    
+
+    <!-- This gives them enough room to scroll to see the bottom nav,
+      especially considering that Chrome overlays the URL in bottom left -->
+    <div style="height:10px;" class="clearfix"></div>
+
+</div>
+
+
+    </div>
+    <div class="tutorial-nav edit-version docked-nav" style="display: none;">
+        None
+    </div>
+
+    <div class="tutorial-content">
+        <div class="layers">
+            <div class="progress layer">
+                <div class="view-progress-bar ui-progressbar ui-widget ui-widget-content ui-corner-all">
+                    <div class="ui-progressbar-value ui-widget-header ui-corner-left ui-corner-right"></div>
+                </div>
+            </div>
+            <div class="content layer">
+                <div class="tutorial-description"></div>
+                
+                <div class="tutorial-node-content">
+                    
+
+                    
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+
+            <div id="end-of-page-spacer">&nbsp;</div>
+
+    </div>
+    </div>
+    </div>
+    <div class="push"></div>
+    
+    
+        
+
+<footer id="footer">
+    <div class="footer-container">
+        <div class="row-fluid main-links">
+            <div class="span2">
+                <ul>
+                    <li class="heading">About</li>
+                    <li><a href="/about">Our Mission</a></li>
+                    <li><a href="/about/the-team">Our Team</a></li>
+                    <li><a href="/about/our-interns">Our Interns</a></li>
+                    <li><a href="/about/our-content-specialists">Our Content Specialists</a></li>
+                    <li><a href="/about/health-competition">Health Content Competition Winners</a></li>
+                </ul>
+            </div>
+            <div class="span2">
+                <ul>
+                    <li class="heading">Help</li>
+                    
+                    <li><a href="/reportissue?type=Defect&issue_labels=" data-tag="Footer" id="report" class="show-demo-dialog">Report a Problem</a></li>
+                    
+                    <li><a href="http://khanacademy.desk.com/">FAQ</a></li>
+
+                    <li class="heading spaced">Contact Us</li>
+                    <li><a href="http://khanacademy.desk.com/">Contact</a></li>
+                    <li><a href="http://khanacademy.desk.com/customer/portal/articles/441307-press-room">Press</a></li>
+                </ul>
+            </div>
+            <div class="span2">
+                <ul>
+                    <li class="heading">Coaching</li>
+                    
+                    <li><a href="/coach/reports">Coach Reports</a></li>
+                    <li><a href="/coach-res">Coach Resources</a></li>
+                    <li><a href="/coach-res/case-studies">Case Studies</a></li>
+                    <li><a href="/commoncore">Common Core</a></li>
+
+                    
+                </ul>
+            </div>
+            <div class="span2">
+                <ul>
+                    <li class="heading">Careers</li>
+                    <li><a href="/careers">Full Time</a></li>
+                    <li><a href="/careers/interns">Internships</a></li>
+
+                    <li class="heading spaced">Contribute</li>
+                    <li><a href="/donate">Donate</a></li>
+                    <li><a href="/contribute">Volunteer</a></li>
+                    <li><a href="/about/our-supporters">Our Supporters</a></li>
+                    <li><a href="http://shop.khanacademy.org/">Shop KA</a></li>
+                </ul>
+            </div>
+            <div class="span3">
+                <ul>
+                    <li class="heading nowrap">
+                        International
+                        <i class="icon-globe i18n-icon"></i>
+                    </li>
+                    
+                        <li>
+<select id="language_picker">
+    
+        <option value="none" disabled="disabled" selected="selected">View Khan Academy in:</option>
+    
+    
+        
+        
+        
+        <option value="id" >Bahasa Indonesia</option>
+    
+        
+        
+        
+        <option value="cs" >čeština</option>
+    
+        
+        
+        
+        <option value="da" >dansk</option>
+    
+        
+        
+        
+        <option value="de" >Deutsch</option>
+    
+        
+        
+        
+        <option value="en" selected="selected">English</option>
+    
+        
+        
+        
+        <option value="es" >español</option>
+    
+        
+        
+        
+        <option value="fr" >français</option>
+    
+        
+        
+        
+        <option value="xh" >isiXhosa</option>
+    
+        
+        
+        
+        <option value="it" >italiano</option>
+    
+        
+        
+        
+        <option value="sw" >Kiswahili</option>
+    
+        
+        
+        
+        <option value="nl" >Nederlands</option>
+    
+        
+        
+        
+        <option value="no" >norsk bokmål</option>
+    
+        
+        
+        
+        <option value="pl" >polski</option>
+    
+        
+        
+        
+        <option value="pt" >português</option>
+    
+        
+        
+        
+        <option value="ptpt" >português (Portugal)</option>
+    
+        
+        
+        
+        <option value="tr" >Türkçe</option>
+    
+        
+        
+        
+        <option value="el" >Ελληνικά</option>
+    
+        
+        
+        
+        <option value="bg" >български</option>
+    
+        
+        
+        
+        <option value="mn" >монгол</option>
+    
+        
+        
+        
+        <option value="ru" >русский</option>
+    
+        
+        
+        
+        <option value="uk" >українська</option>
+    
+        
+        
+        
+        <option value="hy" >հայերեն</option>
+    
+        
+        
+        
+        <option value="he" >עברית</option>
+    
+        
+        
+        
+        <option value="ur" >اردو</option>
+    
+        
+        
+        
+        <option value="ar" >العربية</option>
+    
+        
+        
+        
+        <option value="fa" >فارسی</option>
+    
+        
+        
+        
+        <option value="bn" >বাংলা</option>
+    
+        
+        
+        
+        <option value="te" >తెలుగు</option>
+    
+        
+        
+        
+        <option value="th" >ไทย</option>
+    
+        
+        
+        
+        <option value="cmn" >中文 (简体中文, 中国)</option>
+    
+</select>
+</li>
+                    
+                    <li><a href="/contribute">Translate our content</a></li>
+
+                    <li class="heading spaced">Social</li>
+                    <li><a class="google-analytics-link-track facebook show-demo-dialog"
+                            onclick="_gaq.push(['_trackEvent', 'Click', 'Facebook-Join-Header']);"
+                            href="http://www.facebook.com/khanacademy" title="Facebook">Facebook</a></li>
+                    <li><a class="google-analytics-link-track twitter show-demo-dialog"
+                            onclick="_gaq.push(['_trackEvent', 'Click', 'Twitter-Follow-Header']);"
+                            href="http://twitter.com/khanacademy" title="Twitter">Twitter</a></li>
+                    <li><a href="/about/blog">Blog</a></li>
+                    <li><a href="http://life.khanacademy.org/">Life at KA</a></li>
+                </ul>
+            </div>
+
+            <div class="span1">
+                <img class="handtree" data-delayed-src="https://www.kastatic.org/images/khan-logo-vertical-transparent.png" alt="Khan Academy logo">
+            </div>
+        </div>
+
+        <div class="extra-links clearfix">
+            <div class="legal">
+                    <span><a href="/about/tos">Terms of Use</a></span>
+            </div>
+            <div class="legal">
+                    
+                    <span><a href="/about/privacy-policy">Privacy Notice (updated May 8, 2014)</a></span>
+            </div>
+            
+            <div class="copyright" title="Version: 0518-e5aeeac941e5.375910923670344207">
+                &copy; 2014
+                
+                
+                Khan Academy <br>
+                Except where noted, all rights reserved.
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+    
+
+    
+        <script>
+window.PackageManager = window.PackageManager || {
+    _q: [],
+    setLoaded: function() {
+        this._q.push.apply(this._q, arguments);
+    }
+};
+PackageManager.setLoaded("shared.css","nav.css","tutorial.css","video.css","discussion.css","clarifications.css","moderation.css","exercises.css","exercise-content.css","katex.css")</script>
+<script crossorigin='anonymous' src='https://www.kastatic.org/genfiles/javascript/en/shared-package-5651c36365a219ca9256f0012626f7c9.js'></script>
+<script>PackageManager.setLoaded("shared.js")</script>
+        
+    <script type='text/javascript'>
+        UserProgressCache.init({"started": [], "complete": []});
+    </script>
+    
+    
+
+    
+    <script type="text/javascript">
+      PackageManager.registerManifests({"stylesheets": [{"files": ["/genfiles/stylesheets/en/recommendations-package-76fe9667d0b4ae1af938c42a886a0511.css"], "name": "recommendations.css"}, {"files": ["/genfiles/stylesheets/en/library-package-728a93baf04ce01244559303d72420a2.css"], "name": "library.css"}, {"files": ["/genfiles/stylesheets/en/contentanalytics-package-95f2c78ef84a4b7037dd38313b51aee5.css"], "name": "contentanalytics.css"}, {"files": ["/genfiles/stylesheets/en/homepage-lite-package-0919b6db43e76f1face8d1c5cffbab17.css"], "name": "homepage-lite.css"}, {"files": ["/genfiles/stylesheets/en/discussion-package-6de84e23f59156238fb0c763757128d5.css"], "name": "discussion.css"}, {"files": ["/genfiles/stylesheets/en/profile-package-a4f32e2b8d82c7a395d2b9550ad445a1.css"], "dependencies": ["follow.css", "teams.css"], "name": "profile.css"}, {"files": ["/genfiles/stylesheets/en/tutorial-editor-package-410b958273e9865c3c803bb17a155d08.css"], "name": "tutorial-editor.css"}, {"files": ["/genfiles/stylesheets/en/reports-package-e7a73f3b2f327baf1c5b097d1ba5cee0.css"], "name": "reports.css"}, {"files": ["/genfiles/stylesheets/en/search-package-ee2bb25c6d4020d920f85f7385b7b1d5.css"], "name": "search.css"}, {"files": ["/genfiles/stylesheets/en/exercises-package-f6aa530a21494ab5a32242f961a7adbf.css"], "name": "exercises.css"}, {"files": ["/genfiles/stylesheets/en/coach-report-topic-package-f34ce49cf0cba54f143f796411369247.css"], "name": "coach-report-topic.css"}, {"files": ["/genfiles/stylesheets/en/video-lite-package-edf7eb6026c2cde51a35bd031e9e9163.css"], "name": "video-lite.css"}, {"files": ["/genfiles/stylesheets/en/about-package-a8416552607e1802ee048e43741e94ea.css"], "name": "about.css"}, {"files": ["/genfiles/stylesheets/en/katex-package-eab5bf7b3a7d8f87d0ae613d01046b47.css"], "name": "katex.css"}, {"files": ["/genfiles/stylesheets/en/donate-package-9aa25239e0f9f59097a95a350bb5bfd6.css"], "name": "donate.css"}, {"files": ["/genfiles/stylesheets/en/tos-privacy-package-02760bea2642de221635b3986278df23.css"], "name": "tos-privacy.css"}, {"files": ["/genfiles/stylesheets/en/stories-package-a5c992e383ad5180dcafdb2ace38e7ad.css"], "name": "stories.css"}, {"files": ["/genfiles/stylesheets/en/editor-package-6bcd40fcfecd0d7c134a6f729e5ada0b.css"], "name": "editor.css"}, {"files": ["/genfiles/stylesheets/en/notifications-package-d76cb383acfe490ac323330db8a30a7e.css"], "name": "notifications.css"}, {"files": ["/genfiles/stylesheets/en/interns-package-fa3ae0d3401f52e6a65ec8c492e8ab73.css"], "name": "interns.css"}, {"files": ["/genfiles/stylesheets/en/contribute-package-3ff45a5a2e7c9d245b9ea0d5f4017b6c.css"], "name": "contribute.css"}, {"files": ["/genfiles/stylesheets/en/dashboard-package-fd2ee25580a058dae874961ce7228424.css"], "name": "dashboard.css"}, {"files": ["/genfiles/stylesheets/en/exercise-search-package-7c8340e0e6563b6162b8913234e94804.css"], "name": "exercise-search.css"}, {"files": ["/genfiles/stylesheets/en/teams-package-cc30100e6935b7c18d1aed01769985bf.css"], "name": "teams.css"}, {"files": ["/genfiles/stylesheets/en/shared-mobile-package-2e005cca814a1897502b1344a6cb5f11.css"], "name": "shared-mobile.css"}, {"files": ["/genfiles/stylesheets/en/perseus-admin-package-20a0da1ecde0e3034c46158d9c8e307d.css"], "name": "perseus-admin.css"}, {"files": ["/genfiles/stylesheets/en/nav-package-bc6cbe2d69fd9d2bc5fc205fac8d6896.css"], "name": "nav.css"}, {"files": ["/genfiles/stylesheets/en/scratchpads-package-16cd0fd720c5c64f86880e3285559ce3.css"], "dependencies": ["scratchpad-challenge.css"], "name": "scratchpads.css"}, {"files": ["/genfiles/stylesheets/en/tutorial-package-98548a592b4f7fd36bcaf4c1e3bea2d1.css"], "name": "tutorial.css"}, {"files": ["/genfiles/stylesheets/en/follow-package-1b5d71f213f990b376f64e4368accd18.css"], "name": "follow.css"}, {"files": ["/genfiles/stylesheets/en/topic-package-94c177b5420844a134bb2ffde1380c6f.css"], "name": "topic.css"}, {"files": ["/genfiles/stylesheets/en/bigbingo-package-2225d1c94b745f5054a483f77139a1b2.css"], "name": "bigbingo.css"}, {"files": ["/genfiles/stylesheets/en/scratchpads-exec-package-06aeb39f00cf988c974a6a98fac04d4e.css"], "name": "scratchpads-exec.css"}, {"files": ["/genfiles/stylesheets/en/scratchpad-challenge-package-03a316e959fb5fe257e92edd055dce7d.css"], "name": "scratchpad-challenge.css"}, {"files": ["/genfiles/stylesheets/en/exerciseissues-package-b32782e29348d08fcf4a1fefb06689ce.css"], "name": "exerciseissues.css"}, {"files": ["/genfiles/stylesheets/en/settings-package-474896c0a7418d2e5586c82bd20ff1b2.css"], "dependencies": ["profile-settings.css"], "name": "settings.css"}, {"files": ["/genfiles/stylesheets/en/issues-package-5671c5d6faadfab14c13d3aee75bbfae.css"], "name": "issues.css"}, {"files": ["/genfiles/stylesheets/en/homepage-package-bab5d0b173ab3ffdc7f94074a99fe764.css"], "name": "homepage.css"}, {"files": ["/genfiles/stylesheets/en/translation-editor-package-791dc941ccaf480cc138b4dcc01dfd50.css"], "name": "translation-editor.css"}, {"files": ["/genfiles/stylesheets/en/cs-programs-package-9249cc50f945acb80a41ca5a5fe84857.css"], "name": "cs-programs.css"}, {"files": ["/genfiles/stylesheets/en/profile-nav-package-4b64bf1f1acfa48a460b37321f4f6b90.css"], "name": "profile-nav.css"}, {"files": ["/genfiles/stylesheets/en/publish-package-bef490bc23ce6af298e4adb13434c0a3.css"], "name": "publish.css"}, {"files": ["/genfiles/stylesheets/en/timepicker-package-6445b808106ec4ed6b535929e1fd7c17.css"], "name": "timepicker.css"}, {"files": ["/genfiles/stylesheets/en/topicsadmin-package-f5614a83fad1a5484ab9c6db8b19d433.css"], "name": "topicsadmin.css"}, {"files": ["/genfiles/stylesheets/en/donorschoose-package-18420b27a6bd117aa3496093e8ea9ee6.css"], "name": "donorschoose.css"}, {"files": ["/genfiles/stylesheets/en/location-picker-package-25589d86fc161bb48474a8207b2bbdda.css"], "name": "location-picker.css"}, {"files": ["/genfiles/stylesheets/en/exercise-content-package-d33b319c7feb923e30bd97fa38e19394.css"], "name": "exercise-content.css"}, {"files": ["/genfiles/stylesheets/en/shared-package-e29bf842e3deeba64e56449b9490f40a.css"], "name": "shared.css"}, {"files": ["/genfiles/stylesheets/en/commoncore-package-587208273d1665803c1360e298a65d8f.css"], "name": "commoncore.css"}, {"files": ["/genfiles/stylesheets/en/bootstrap-package-31d5a45083ecbc7847798844c4945e98.css"], "name": "bootstrap.css"}, {"files": ["/genfiles/stylesheets/en/maps-package-b2f7b22af79dec6de36f691bb52a244d.css"], "name": "maps.css"}, {"files": ["/genfiles/stylesheets/en/studentlists-package-b291a1950297be668ff2673a6b8523c9.css"], "name": "studentlists.css"}, {"files": ["/genfiles/stylesheets/en/login-package-aca2ab9efc347b591f654dbe94f18e30.css"], "name": "login.css"}, {"files": ["/genfiles/stylesheets/en/style-package-1a3f2c844ca3de169c925209ddfa2721.css"], "name": "style.css"}, {"files": ["/genfiles/stylesheets/en/tasks-package-ef48587f26311b950265e6f3000e44ec.css"], "name": "tasks.css"}, {"files": ["/genfiles/stylesheets/en/coach-report-exercises-package-18fc7d80592bccc4af23edfaf13e9a0b.css"], "name": "coach-report-exercises.css"}, {"files": ["/genfiles/stylesheets/en/coach-report-realtime-package-297656ba806bc799fb1a2035794ff57f.css"], "name": "coach-report-realtime.css"}, {"files": ["/genfiles/stylesheets/en/labs-package-72e0193c8be6d27849c8bc54090487fc.css"], "name": "labs.css"}, {"files": ["/genfiles/stylesheets/en/coach-report-progress-by-student-package-582c197739e64b1c1f7c1c2d0b7b600c.css"], "name": "coach-report-progress-by-student.css"}, {"files": ["/genfiles/stylesheets/en/mobile-package-320ea5ea791593a0c27742d736450f20.css"], "name": "mobile.css"}, {"files": ["/genfiles/stylesheets/en/badge-package-bffb356d2bdb7856f4798c8266ffb69b.css"], "name": "badge.css"}, {"files": ["/genfiles/stylesheets/en/profile-settings-package-08c771e33b245de210dac84b31f4bb51.css"], "dependencies": ["location-picker.css", "eduorg-picker.css"], "name": "profile-settings.css"}, {"files": ["/genfiles/stylesheets/en/knowledgemap-package-eb22b55377f8c1bcd9abc1cc8e1216ad.css"], "name": "knowledgemap.css"}, {"files": ["/genfiles/stylesheets/en/clarifications-package-b0e46b1a926ad4ffc895eca0dc8342c6.css"], "name": "clarifications.css"}, {"files": ["/genfiles/stylesheets/en/profile-reports-package-2373b66c96e507c1ed873cad908567b2.css"], "name": "profile-reports.css"}, {"files": ["/genfiles/stylesheets/en/socrates-package-c80df17ef4ea19e100f21a35e004b047.css"], "name": "socrates.css"}, {"files": ["/genfiles/stylesheets/en/typeahead-vanilla-package-ee98819c984d89dd28d51f93cfab0991.css"], "name": "typeahead-vanilla.css"}, {"files": ["/genfiles/stylesheets/en/eduorg-picker-package-e7a639401c631679329916d7e98c7fe4.css"], "name": "eduorg-picker.css"}, {"files": ["/genfiles/stylesheets/en/coach-report-grid-package-64193f7f81ce9e7541a2b48c0b95e77d.css"], "name": "coach-report-grid.css"}, {"files": ["/genfiles/stylesheets/en/video-package-e8e82101de78002bb9d174ea3a312598.css"], "name": "video.css"}, {"files": ["/genfiles/stylesheets/en/intro-package-03a147e2b0d6a521cffdae13c60f3f4f.css"], "name": "intro.css"}, {"files": ["/genfiles/stylesheets/en/coach-report-activity-package-562a14bd850cc110cc9d0c2151600ecb.css"], "name": "coach-report-activity.css"}, {"files": ["/genfiles/stylesheets/en/moderation-package-d87c5fe5517e712e781037a4bcee78f6.css"], "name": "moderation.css"}, {"files": ["/genfiles/stylesheets/en/react-package-477bd49961ad1212206b4a5cf042e400.css"], "name": "react.css"}], "javascript": [{"files": ["/genfiles/javascript/en/socrates-package-a2dc9cdefc88b60e74b645ac7c2871c9.js"], "name": "socrates.js"}, {"files": ["/genfiles/javascript/en/react-art-package-2ce233206490090c76f611917e668f5f.js"], "dependencies": ["react.js"], "name": "react-art.js"}, {"files": ["/genfiles/javascript/en/tasks-secondary-package-78caa9849269acf5834ec17a07427135.js"], "dependencies": ["react.js", "tasks.js", "odometer.js"], "name": "tasks-secondary.js"}, {"files": ["/genfiles/javascript/en/coach-report-exercises-package-fca2d1ad12397147cb4ae38e480db1dc.js"], "dependencies": ["reports.js"], "name": "coach-report-exercises.js"}, {"files": ["/genfiles/javascript/en/notifications-package-6b65ad362c8c8060878509546c92876a.js"], "dependencies": ["react.js"], "name": "notifications.js"}, {"files": ["/genfiles/javascript/en/follow-package-3bfcb96eaa822c5ca21087f0863354e9.js"], "dependencies": ["react.js"], "name": "follow.js"}, {"files": ["/genfiles/javascript/en/publish-package-c2bf46b858d2481359401f1c79598354.js"], "dependencies": ["react.js"], "name": "publish.js"}, {"files": ["/genfiles/javascript/en/articles-latex-package-f9445f7696a12b2f89619a1a966992a5.js"], "dependencies": ["katex.js"], "name": "articles-latex.js"}, {"files": ["/genfiles/javascript/en/coach-reports-downloads-package-a59a13fb126311528e212eb0f41cbc9b.js"], "name": "coach-reports-downloads.js"}, {"files": ["/genfiles/javascript/en/bloodhound-package-6e02bf4d7a6a95c896deee9b9b53bf64.js"], "name": "bloodhound.js"}, {"files": ["/genfiles/javascript/en/d3-package-e138198255b37a9829ddbcaa2c954c20.js"], "name": "d3.js"}, {"files": ["/genfiles/javascript/en/studentlists-package-60c6096f5ca9720111f6ada92495c81d.js"], "dependencies": ["mission-picker.js"], "name": "studentlists.js"}, {"files": ["/genfiles/javascript/en/odometer-package-684f250b5dce53603b0cf811afdf5804.js"], "name": "odometer.js"}, {"files": ["/genfiles/javascript/en/mobile-oauth-package-a1d5636bf4525fe36c6a41a3ac7121a3.js"], "name": "mobile-oauth.js"}, {"files": ["/genfiles/javascript/en/location-picker-package-58ec55f9decc4566aef4f86e93105b4a.js"], "dependencies": ["react.js", "select2.js"], "name": "location-picker.js"}, {"files": ["/genfiles/javascript/en/maps-package-e4bf6e76e6f0ec70ba9f308c90b621ad.js"], "name": "maps.js"}, {"files": ["/genfiles/javascript/en/exercise-search-package-19c9370f56ec01778f5dda2a4c945e91.js"], "name": "exercise-search.js"}, {"files": ["/genfiles/javascript/en/scratchpads-exec-package-2aa8667d5c4d3d6513a2bc6c4a205fe0.js"], "name": "scratchpads-exec.js"}, {"files": ["/genfiles/javascript/en/intro-package-3b5d672b701c1805bb4fbbc22385a136.js"], "dependencies": ["react.js"], "name": "intro.js"}, {"files": ["/genfiles/javascript/en/coach-report-activity-package-875c9020e784e96271061c0add5540e1.js"], "dependencies": ["reports.js"], "name": "coach-report-activity.js"}, {"files": ["/genfiles/javascript/en/commoncore-package-9b6512d09f05ba6a85fb79f7858af1c8.js"], "dependencies": ["react.js"], "name": "commoncore.js"}, {"files": ["/genfiles/javascript/en/login-package-fc15fb08b98eb24cb9af0d3e1c3d0e15.js"], "name": "login.js"}, {"files": ["/genfiles/javascript/en/select2-package-afc9a20cdb0b13bd5f775adeec935334.js"], "dependencies": ["react.js"], "name": "select2.js"}, {"files": ["/genfiles/javascript/en/donorschoose-package-e869d9227407d9e4952c71c435badef9.js"], "name": "donorschoose.js"}, {"files": ["/genfiles/javascript/en/mission-picker-package-06ed217572d8ec5c2d78696ad383e7a6.js"], "dependencies": ["react.js"], "name": "mission-picker.js"}, {"files": ["/genfiles/javascript/en/devadmin-package-133afc49df4df3822bd4862a64861082.js"], "dependencies": ["react.js"], "name": "devadmin.js"}, {"files": ["/genfiles/javascript/en/stories-package-02ccf3fca42bd88eb0a72a14f424d947.js"], "name": "stories.js"}, {"files": ["/genfiles/javascript/en/highcharts-package-76a6ab22e0dd417220cb974ae223bd3e.js"], "name": "highcharts.js"}, {"files": ["/genfiles/javascript/en/scratchpads-package-84f651ed09d3c9cc47becce6ef16b22a.js"], "dependencies": ["scratchpad-challenge.js", "scratchpad-base.js"], "name": "scratchpads.js"}, {"files": ["/genfiles/javascript/en/profile-settings-package-9bc8dc896098b4cf571fc5b1a2c9ca23.js"], "dependencies": ["react.js", "location-picker.js", "eduorg-picker.js", "select2.js"], "name": "profile-settings.js"}, {"files": ["/genfiles/javascript/en/coach-report-grid-package-ddd0010e832a21c913e335b0e28faaf7.js"], "dependencies": ["reports.js"], "name": "coach-report-grid.js"}, {"files": ["/genfiles/javascript/en/phantom-package-d0531eeff9e3860f4263db033da896f0.js"], "name": "phantom.js"}, {"files": ["/genfiles/javascript/en/profile-nav-package-3fb9dc39249075eb8bf2a76dac51a53b.js"], "dependencies": ["react.js"], "name": "profile-nav.js"}, {"files": ["/genfiles/javascript/en/moderation-package-1a768d8cea6216c7289efdb1d04d0885.js"], "dependencies": ["react.js", "discussion.js"], "name": "moderation.js"}, {"files": ["/genfiles/javascript/en/ckeditor-package-7a5662697c13c78d0fb752fe65d95170.js"], "name": "ckeditor.js"}, {"files": ["/genfiles/javascript/en/reports-package-d56d1ef0d1038c07a05dc0e5f6ae95a8.js"], "dependencies": ["react.js", "select2.js"], "name": "reports.js"}, {"files": ["/genfiles/javascript/en/exercises-package-c0c797d0e71b1a1732336ecda2623e29.js"], "name": "exercises.js"}, {"files": ["/genfiles/javascript/en/treecopy-package-cd69ef25238b5289d848486557de1ea0.js"], "name": "treecopy.js"}, {"files": ["/genfiles/javascript/en/missions-package-7a87a2fe0685b91d1456dbf6667f8b3a.js"], "dependencies": ["react.js"], "name": "missions.js"}, {"files": ["/genfiles/javascript/en/interns-package-a045aba2f2786216ea9ab7c359aa7dd5.js"], "name": "interns.js"}, {"files": ["/genfiles/javascript/en/cs-programs-package-99d991f409ae013780c61014f576b251.js"], "dependencies": ["react.js"], "name": "cs-programs.js"}, {"files": ["/genfiles/javascript/en/search-package-2a08745f5ea5f6ecf034069de76e4ea6.js"], "name": "search.js"}, {"files": ["/genfiles/javascript/en/nav-package-7f551f12582517602306e1e355598b57.js"], "name": "nav.js"}, {"files": ["/genfiles/javascript/en/donate-package-d21be01feebb0da6bae9db7123de79f4.js"], "name": "donate.js"}, {"files": ["/genfiles/javascript/en/scratchpad-challenge-package-7a0398f8a568d5e72bca3a429916aefd.js"], "name": "scratchpad-challenge.js"}, {"files": ["/genfiles/javascript/en/video-testimonials-package-00b26b41ea766e0ebb4131dce9477775.js"], "dependencies": ["react.js"], "name": "video-testimonials.js"}, {"files": ["/genfiles/javascript/en/perseus-admin-package-5fa5c6d9a932fbe3352c22e8e6170b9c.js"], "dependencies": ["react.js", "perseus.js", "select2.js", "d3.js", "bloodhound.js", "typeahead-vanilla.js"], "name": "perseus-admin.js"}, {"files": ["/genfiles/javascript/en/issues-package-77ca8f3784f7c4ae512fac671953c32e.js"], "dependencies": ["react.js"], "name": "issues.js"}, {"files": ["/genfiles/javascript/en/clarifications-package-5f4faf14155af4b46acf423b7520482b.js"], "dependencies": ["react.js", "react-components.js"], "name": "clarifications.js"}, {"files": ["/genfiles/javascript/en/discussion-package-62879fac4aa74a5bbc5ebb004d1ebe50.js"], "name": "discussion.js"}, {"files": ["/genfiles/javascript/en/react-components-package-d308259f33b57e327cd9f0ca402198b8.js"], "name": "react-components.js"}, {"files": ["/genfiles/javascript/en/video-package-c5c1b277291fa0f56a5e7cd157995575.js"], "dependencies": ["react.js"], "name": "video.js"}, {"files": ["/genfiles/javascript/en/orphan-package-828c13a767d5f7c175b7afbef2327af9.js"], "dependencies": ["react.js"], "name": "orphan.js"}, {"files": ["/genfiles/javascript/en/katex-package-1997eee8149c24503b56b09917295c55.js"], "name": "katex.js"}, {"files": ["/genfiles/javascript/en/coach-report-topic-package-aed3eeb521b268ece24b4dcb41dd5efa.js"], "dependencies": ["reports.js"], "name": "coach-report-topic.js"}, {"files": ["/genfiles/javascript/en/mobile-package-a3a0125fb16e43093d25b36e071f312a.js"], "name": "mobile.js"}, {"files": ["/genfiles/javascript/en/coaches-package-e2520bb9b653090f40014edfbe16fa85.js"], "name": "coaches.js"}, {"files": ["/genfiles/javascript/en/exercise-content-package-e9fa52d36c5d88d5fdc05715fe1f2c54.js"], "dependencies": ["exercises.js"], "name": "exercise-content.js"}, {"files": ["/genfiles/javascript/en/coach-report-realtime-package-04654a2de1b22eabb285060b0bff81ee.js"], "dependencies": ["reports.js"], "name": "coach-report-realtime.js"}, {"files": ["/genfiles/javascript/en/homepage-package-e3d76122076e67c41898df86c23e0b1d.js"], "name": "homepage.js"}, {"files": ["/genfiles/javascript/en/scratchpad-base-package-c7b24bdeae42f1bdbd022877545c3d0a.js"], "name": "scratchpad-base.js"}, {"files": ["/genfiles/javascript/en/eduorg-picker-package-b425554ba20a8350f43973624b4ba7ae.js"], "dependencies": ["react.js", "select2.js"], "name": "eduorg-picker.js"}, {"files": ["/genfiles/javascript/en/timepicker-package-97921b8654b38937b943e61d5c93cbd9.js"], "name": "timepicker.js"}, {"files": ["/genfiles/javascript/en/contentanalytics-package-e0c31d2484a045e6fd541c75573edeb9.js"], "dependencies": ["react.js", "select2.js"], "name": "contentanalytics.js"}, {"files": ["/genfiles/javascript/en/profile-package-49a16fc87395512780dd729e042cd498.js"], "dependencies": ["discussion.js", "profile-nav.js", "missions.js", "react.js", "cs-programs.js", "profile-settings.js", "follow.js", "teams.js"], "name": "profile.js"}, {"files": ["/genfiles/javascript/en/react-package-361ba1c22347034f7f2b5db2f8022301.js"], "name": "react.js"}, {"files": ["/genfiles/javascript/en/tutorial-package-b0fa4a7bc7a9d1847611d477e1e4d5a2.js"], "name": "tutorial.js"}, {"files": ["/genfiles/javascript/en/teams-package-00a6a29f3e1c52b114b9a0eec8620f27.js"], "dependencies": ["react.js", "d3.js"], "name": "teams.js"}, {"files": ["/genfiles/javascript/en/sat-package-921494b853d2ae12a84c4a4cba3fdecb.js"], "dependencies": ["react.js"], "name": "sat.js"}, {"files": ["/genfiles/javascript/en/tutorial-editor-package-2c0fb6c686f67bb8a3371260b3e6a997.js"], "dependencies": ["react.js", "editor.js", "perseus-admin.js"], "name": "tutorial-editor.js"}, {"files": ["/genfiles/javascript/en/topicsadmin-package-a75041577d3e4648796bba1ef029d7d3.js"], "dependencies": ["react.js"], "name": "topicsadmin.js"}, {"files": ["/genfiles/javascript/en/raphael-package-12fe3068df66c662f6dd09e9fd0ae281.js"], "name": "raphael.js"}, {"files": ["/genfiles/javascript/en/exerciseissues-package-96afee9fac2ee4f779163525a96ee4b1.js"], "dependencies": ["react.js"], "name": "exerciseissues.js"}, {"files": ["/genfiles/javascript/en/profile-reports-package-e22a94922ef5045c0d88e6c73c51948c.js"], "dependencies": ["profile.js", "react.js"], "name": "profile-reports.js"}, {"files": ["/genfiles/javascript/en/bigbingo-package-223e4735b2e69aa5ac6c7b5b5836a471.js"], "name": "bigbingo.js"}, {"files": ["/genfiles/javascript/en/dashboard-secondary-package-56c7f01baee3c2780eba4aa193282749.js"], "dependencies": ["dashboard.js", "select2.js"], "name": "dashboard-secondary.js"}, {"files": ["/genfiles/javascript/en/coach-report-progress-by-student-package-4d929da9a6266bd33e8a9fd483bbe4f9.js"], "dependencies": ["reports.js"], "name": "coach-report-progress-by-student.js"}, {"files": ["/genfiles/javascript/en/topic-package-437c9a47c2071641bb30ce447a6e0482.js"], "name": "topic.js"}, {"files": ["/genfiles/javascript/en/translation-editor-package-d10516d82b3e5feb8988712abb7c68b4.js"], "dependencies": ["react.js"], "name": "translation-editor.js"}, {"files": ["/genfiles/javascript/en/topic-editor-package-70e2a2c2a766f3b2bbea9890f4a9e293.js"], "dependencies": ["editor.js"], "name": "topic-editor.js"}, {"files": ["/genfiles/javascript/en/shared-package-5651c36365a219ca9256f0012626f7c9.js"], "name": "shared.js"}, {"files": ["/genfiles/javascript/en/perseus-package-db14f9bd5ca6c5fae2b5e4d56c79de3d.js"], "dependencies": ["react.js", "katex.js", "exercise-content.js"], "name": "perseus.js"}, {"files": ["/genfiles/javascript/en/recommendations-package-e67137962270ce3431fd152312c10525.js"], "dependencies": ["react.js", "tasks.js", "timepicker.js"], "name": "recommendations.js"}, {"files": ["/genfiles/javascript/en/autocomplete-package-11c52f165c8cc59103f084869b88f5a0.js"], "name": "autocomplete.js"}, {"files": ["/genfiles/javascript/en/dashboard-package-3401ccdd2a475e8893f5f0c3337e4ff5.js"], "dependencies": ["missions.js", "profile-nav.js", "react.js", "tasks.js", "mission-picker.js"], "name": "dashboard.js"}, {"files": ["/genfiles/javascript/en/editor-package-6f3861b25cc1524085a85ce7f9b807ad.js"], "dependencies": ["autocomplete.js", "react.js", "select2.js", "tutorial.js"], "name": "editor.js"}, {"files": ["/genfiles/javascript/en/typeahead-package-c2d87add47391542de7594964745c41e.js"], "name": "typeahead.js"}, {"files": ["/genfiles/javascript/en/typeahead-vanilla-package-762234889e5ab2c60374de0cd48b3cf5.js"], "name": "typeahead-vanilla.js"}, {"files": ["/genfiles/javascript/en/tasks-package-ce958879511c2d24c9bc0f1ba12a90f7.js"], "dependencies": ["react.js"], "name": "tasks.js"}, {"files": ["/genfiles/javascript/en/library-package-4251dbdf84d6de38723069fd51712f72.js"], "name": "library.js"}, {"files": ["/genfiles/javascript/en/settings-package-7c170296a127afa1d5abc7708f1ec00c.js"], "dependencies": ["profile-settings.js"], "name": "settings.js"}, {"files": ["/genfiles/javascript/en/knowledgemap-package-aeecb838a21cc6e3ec3a505510940fc8.js"], "name": "knowledgemap.js"}]});
+    </script><script type="text/javascript">
+        $(window).load(function() {
+            var Analytics = KAdefine.require("./javascript/shared-package/analytics.js");
+            Analytics.reportTiming(
+                "537980f200ff00ffcb1936b920ec0001737e6b68616e2d61636164656d790001303531382d65356165656163393431653500010191",
+                "webapp.VideoPage");
+        });
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+        window.mixpanel = [];
+    </script>
+
+        
+    
+<script type="text/javascript">
+    $('#language_picker').change(function () {
+        var new_tag = $('#language_picker option:selected').attr('value');
+        // TODO(csilvers): I18N: redirect to <new_tag>.khanacademy.org?
+        window.location.href = '/intl/' + new_tag;
+    });
+</script>
+
+
+    
+    <style type="text/css">
+        @media screen and (min-width: 480px) and (max-width: 1337px) {
+            .g-m-p, .g-m-p-corner {
+                left: 250px;
+            }
+        }
+    </style>
+    <script type="text/javascript">
+        (function() {
+            function loadHorizon() {
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = location.protocol + '//ak.sail-horizon.com/horizon/v1.js';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
+            loadHorizon();
+            var oldOnLoad = window.onload;
+            window.onload = function() {
+                if (typeof oldOnLoad === 'function') {
+                    oldOnLoad();
+                }
+                if (window.Sailthru) {
+                    Sailthru.setup({domain: 'sthorizon.khanacademy.org'});
+                } 
+            };
+        })();
+    </script>
+    
+
+    <script type="text/javascript">$(function() {
+                NotificationsLoader.loadUrgent({"kind": "BaseNotification", "userId": null, "removable": true, "url": null, "text": "Use Khan Academy to practice your math skills.", "buttonText": "Unlock your Learning Dashboard", "priority": 4, "class_": ["BaseNotification", "UrgentNotification", "BannerNotification", "LearningDashboardNotification"], "link": "/signup", "chevron": true, "date": null, "brandNew": true, "notificationClass": "blue"}, "/math/early-math/cc-early-math-add-sub-topic/basic-addition-subtraction/v/addition-introduction");
+            });$(function() {
+            
+
+            var NavHeader = KAdefine.require(
+                "./javascript/shared-package/nav-header.js");
+            NavHeader.init({
+                loginUrl: "/login?continue=%2Fmath%2Fearly-math%2Fcc-early-math-add-sub-topic%2Fbasic-addition-subtraction%2Fv%2Faddition-introduction",
+                logoutUrl: "/logout?continue=%2Fmath%2Fearly-math%2Fcc-early-math-add-sub-topic%2Fbasic-addition-subtraction%2Fv%2Faddition-introduction",
+                signUpUrl: "/signup?continue=%2Fmath%2Fearly-math%2Fcc-early-math-add-sub-topic%2Fbasic-addition-subtraction%2Fv%2Faddition-introduction"
+            });
+
+            var NavFooter = KAdefine.require(
+                "./javascript/shared-package/nav-footer.js");
+            NavFooter.init();
+
+            
+
+            
+            HeaderTopicBrowser.init();
+        });
+
+        
+
+        
+            if (window.console) {
+                console.log(document.childNodes[1].nodeValue);
+            }
+        
+    </script>
+
+    
+    
+
+
+    
+    
+<script crossorigin='anonymous' src='https://www.kastatic.org/genfiles/javascript/en/nav-package-7f551f12582517602306e1e355598b57.js'></script>
+<script>PackageManager.setLoaded("nav.js")</script>
+    
+<script crossorigin='anonymous' src='https://www.kastatic.org/genfiles/javascript/en/tutorial-package-b0fa4a7bc7a9d1847611d477e1e4d5a2.js'></script>
+<script>PackageManager.setLoaded("tutorial.js")</script>
+
+    
+
+    <script>
+    $(function() {
+        Tutorial.Nav.init(
+        {"isDeveloperPreview": false, "topicModel": {"iconSrc": "", "domainSlug": "math", "relativeUrl": "/math/early-math/cc-early-math-add-sub-topic/basic-addition-subtraction", "creationDate": "2014-05-08T23:49:43Z", "webUrl": "", "kaUrl": "https://www.khanacademy.org/math/early-math/cc-early-math-add-sub-topic/basic-addition-subtraction", "translatedStandaloneTitle": "Basic addition and subtraction", "translatedTitle": "Basic addition and subtraction", "gplusUrl": "", "id": "x224ced2e", "oldKeyName": null, "hide": false, "doNotPublish": false, "childData": [{"kind": "Video", "id": "x7d5effb1"}, {"kind": "Exercise", "id": 3001}, {"kind": "Video", "id": "x2fefc435"}, {"kind": "Exercise", "id": 2003}, {"kind": "Video", "id": "x041e77f7"}, {"kind": "Exercise", "id": "xaa196ff0"}, {"kind": "Exercise", "id": "x6cc2a895"}, {"kind": "Video", "id": "x65eda1aa"}, {"kind": "Exercise", "id": "x442d4783"}], "twitterUrl": "", "translatedDescription": "", "version": null, "alternateSlugs": ["new-topic-2014-05-08T23:14:08.087Z"], "deletedModTime": null, "logoImageUrl": "", "inKnowledgeMap": false, "description": "", "xPos": 0.0, "nodeSlug": "basic-addition-subtraction", "deleted": false, "facebookUrl": "", "backupTimestamp": null, "renderType": "Tutorial", "backgroundImageUrl": "", "backgroundImageCaption": "", "topicPageUrl": "/math/early-math/cc-early-math-add-sub-topic/basic-addition-subtraction", "extendedSlug": "math/early-math/cc-early-math-add-sub-topic/basic-addition-subtraction", "slug": "basic-addition-subtraction", "tags": [], "kind": "Topic", "inTopicBrowser": false, "title": "Basic addition and subtraction", "sha": "8aa2cd2b628a11292a67f1e655faab564cdfaaf6", "standaloneTitle": "Basic addition and subtraction", "yPos": 0.0, "currentRevisionKey": "8aa2cd2b628a11292a67f1e655faab564cdfaaf6", "contentId": "x224ced2e", "contentKind": "Topic"}, "contentModels": [{"translatedYoutubeId": "fsTD_jqseBA", "relativeUrl": "/video/addition-introduction", "hasQuestions": false, "creationDate": "2014-04-25T19:20:02Z", "keywords": "", "kaUrl": "https://www.khanacademy.org/video/addition-introduction", "duration": 191, "translatedTitle": "Introduction to addition", "translatedDescriptionHtml": "", "id": "x7d5effb1", "descriptionHtml": "", "title": "Introduction to addition", "progressKey": "vx7d5effb1", "editSlug": "edit/v/x7d5effb1", "authorNames": [], "deletedModTime": null, "description": "Description", "extraProperties": null, "nodeSlug": "v/addition-introduction", "deleted": false, "backupTimestamp": null, "dateAdded": "2014-04-25T19:24:36Z", "downloadUrls": {"mp4": "http://s3.amazonaws.com/KA-youtube-converted/fsTD_jqseBA.mp4/fsTD_jqseBA.mp4", "png": "http://s3.amazonaws.com/KA-youtube-converted/fsTD_jqseBA.mp4/fsTD_jqseBA.png", "m3u8": "http://s3.amazonaws.com/KA-youtube-converted/fsTD_jqseBA.m3u8/fsTD_jqseBA.m3u8"}, "translatedYoutubeLang": "en", "kind": "Video", "url": "http://www.youtube.com/watch?v=fsTD_jqseBA&feature=youtube_gdata_player", "kaUserLicense": "cc-by-nc-sa", "globalId": "vx7d5effb1", "sha": "4b5da48e378f62b796b163925c8da8aa221cde85", "translatedDescription": "", "imageUrl": "https://img.youtube.com/vi/fsTD_jqseBA/hqdefault.jpg", "youtubeId": "fsTD_jqseBA", "contentId": "x7d5effb1", "contentKind": "Video", "readableId": "addition-introduction"}, {"translatedShortDisplayName": "Addition wi", "usesStreakSelection": false, "relativeUrl": "/exercise/addition_1", "guaranteedFileName": "addition_1.html", "fileName": "addition_1.html", "authorName": "Marcia Lee", "creationDate": "2014-05-02T00:16:53Z", "usesAssessmentItems": false, "kaUrl": "https://www.khanacademy.org/exercise/addition_1", "vPosition": 2, "translatedTitle": "Addition within 5", "isQuiz": false, "translatedDescriptionHtml": "Add two 1-digit numbers", "id": "3001", "displayName": "Addition within 5", "trackingDocumentUrl": "https://docs.google.com/a/khanacademy.org/open?id=13QW0ZJ7A_7BSbZPHmQkl6Xp08COi9r1ydnltrqxsKLk", "descriptionHtml": "Add two 1-digit numbers", "sha": "efec680fa5e0e6f52836151c11a56daf88ac2420", "tags": [], "progressKey": "e3001", "editSlug": "edit/e/3001", "summative": false, "live": true, "translatedDescription": "Add two 1-digit numbers", "prettyDisplayName": "Addition within 5", "deletedModTime": "2013-07-13T00:03:08Z", "allAssessmentItems": [], "description": "Add two 1-digit numbers", "translatedPrettyDisplayName": "Addition within 5", "nodeSlug": "e/addition_1", "deleted": false, "backupTimestamp": "2013-09-29T10:12:32Z", "problemTypes": [], "curatedRelatedVideos": ["x7d5effb1"], "covers": ["making-five"], "hPosition": -17, "translatedDisplayName": "Addition within 5", "kind": "Exercise", "sha1": "c7e42065d8a47a57c5ff98186b839b60f31bb1b5", "name": "addition_1", "prerequisites": ["making-five"], "assessmentItemTags": ["ag5zfmtoYW4tYWNhZGVteXI2CxIRQXNzZXNzbWVudEl0ZW1UYWciATAMCxIRQXNzZXNzbWVudEl0ZW1UYWcYgICAwIKTqAoM", "ag5zfmtoYW4tYWNhZGVteXI2CxIRQXNzZXNzbWVudEl0ZW1UYWciATAMCxIRQXNzZXNzbWVudEl0ZW1UYWcYgICAgMfKuwkM"], "title": "Addition within 5", "globalId": "e3001", "secondsPerFastProblem": 4.0, "shortDisplayName": "Addition wi", "imageUrl": "https://ka-exercise-screenshots.s3.amazonaws.com/addition_1.png", "tutorialOnly": false, "currentRevisionKey": "efec680fa5e0e6f52836151c11a56daf88ac2420", "imageUrl_256": "https://ka-exercise-screenshots.s3.amazonaws.com/addition_1_256.png", "contentId": "3001", "contentKind": "Exercise"}, {"translatedYoutubeId": "AO9bHbUdg-M", "relativeUrl": "/video/subtraction-introduction", "hasQuestions": false, "creationDate": "2014-04-25T19:20:26Z", "keywords": "", "kaUrl": "https://www.khanacademy.org/video/subtraction-introduction", "duration": 219, "translatedTitle": "Introduction to subtraction", "translatedDescriptionHtml": "", "id": "x2fefc435", "descriptionHtml": "", "title": "Introduction to subtraction", "progressKey": "vx2fefc435", "editSlug": "edit/v/x2fefc435", "authorNames": [], "deletedModTime": null, "description": "Description", "extraProperties": null, "nodeSlug": "v/subtraction-introduction", "deleted": false, "backupTimestamp": null, "dateAdded": "2014-04-25T19:24:36Z", "downloadUrls": {"mp4": "http://s3.amazonaws.com/KA-youtube-converted/AO9bHbUdg-M.mp4/AO9bHbUdg-M.mp4", "png": "http://s3.amazonaws.com/KA-youtube-converted/AO9bHbUdg-M.mp4/AO9bHbUdg-M.png", "m3u8": "http://s3.amazonaws.com/KA-youtube-converted/AO9bHbUdg-M.m3u8/AO9bHbUdg-M.m3u8"}, "translatedYoutubeLang": "en", "kind": "Video", "url": "http://www.youtube.com/watch?v=AO9bHbUdg-M&feature=youtube_gdata_player", "kaUserLicense": "cc-by-nc-sa", "globalId": "vx2fefc435", "sha": "2201a1cd84391c36e1f137440f675d0bc6326845", "translatedDescription": "", "imageUrl": "https://img.youtube.com/vi/AO9bHbUdg-M/hqdefault.jpg", "youtubeId": "AO9bHbUdg-M", "contentId": "x2fefc435", "contentKind": "Video", "readableId": "subtraction-introduction"}, {"translatedShortDisplayName": "Subtraction", "usesStreakSelection": false, "relativeUrl": "/exercise/subtraction_1", "guaranteedFileName": "subtraction_1.html", "fileName": "subtraction_1.html", "authorName": "Marcia Lee", "creationDate": "2014-05-02T00:22:11Z", "usesAssessmentItems": false, "kaUrl": "https://www.khanacademy.org/exercise/subtraction_1", "vPosition": 3, "translatedTitle": "Subtraction within 5", "isQuiz": false, "translatedDescriptionHtml": "", "id": "2003", "displayName": "Subtraction within 5", "trackingDocumentUrl": "https://docs.google.com/a/khanacademy.org/open?id=13UiyfV4uu6lvxUOHUFjcVx2jfcTRzUQ9BXqkBLvZu9w", "descriptionHtml": "", "sha": "fa989e649a6a79289c2308be93f1d29afc2e99cf", "tags": [], "progressKey": "e2003", "editSlug": "edit/e/2003", "summative": false, "live": true, "translatedDescription": "", "prettyDisplayName": "Subtraction within 5", "deletedModTime": "2013-07-13T00:03:08Z", "allAssessmentItems": [], "description": "", "translatedPrettyDisplayName": "Subtraction within 5", "nodeSlug": "e/subtraction_1", "deleted": false, "backupTimestamp": "2013-09-29T10:01:04Z", "problemTypes": [], "curatedRelatedVideos": ["x2fefc435"], "covers": [], "hPosition": -16, "translatedDisplayName": "Subtraction within 5", "kind": "Exercise", "sha1": "7ee46ddfc3ef0e6dac503882f3e9a11fbc6f7411", "name": "subtraction_1", "prerequisites": ["addition_1"], "assessmentItemTags": ["ag5zfmtoYW4tYWNhZGVteXI2CxIRQXNzZXNzbWVudEl0ZW1UYWciATAMCxIRQXNzZXNzbWVudEl0ZW1UYWcYgICAwIKTqAoM", "ag5zfmtoYW4tYWNhZGVteXI2CxIRQXNzZXNzbWVudEl0ZW1UYWciATAMCxIRQXNzZXNzbWVudEl0ZW1UYWcYgICAgMfKuwkM"], "title": "Subtraction within 5", "globalId": "e2003", "secondsPerFastProblem": 4.0, "shortDisplayName": "Subtraction", "imageUrl": "https://ka-exercise-screenshots.s3.amazonaws.com/subtraction_1.png", "tutorialOnly": false, "currentRevisionKey": "fa989e649a6a79289c2308be93f1d29afc2e99cf", "imageUrl_256": "https://ka-exercise-screenshots.s3.amazonaws.com/subtraction_1_256.png", "contentId": "2003", "contentKind": "Exercise"}, {"translatedYoutubeId": "ie0waMJxnTs", "relativeUrl": "/video/adding-fruit", "hasQuestions": false, "keywords": "", "kaUrl": "https://www.khanacademy.org/video/adding-fruit", "duration": 137, "translatedTitle": "Pieces of fruit", "translatedDescriptionHtml": "", "id": "x041e77f7", "descriptionHtml": "", "title": "Pieces of fruit", "progressKey": "vx041e77f7", "editSlug": "edit/v/x041e77f7", "authorNames": [], "deletedModTime": null, "description": "Description", "extraProperties": null, "nodeSlug": "v/adding-fruit", "deleted": false, "backupTimestamp": null, "dateAdded": "2014-03-24T20:32:14Z", "downloadUrls": {"mp4": "http://s3.amazonaws.com/KA-youtube-converted/ie0waMJxnTs.mp4/ie0waMJxnTs.mp4", "png": "http://s3.amazonaws.com/KA-youtube-converted/ie0waMJxnTs.mp4/ie0waMJxnTs.png", "m3u8": "http://s3.amazonaws.com/KA-youtube-converted/ie0waMJxnTs.m3u8/ie0waMJxnTs.m3u8"}, "translatedYoutubeLang": "en", "kind": "Video", "url": "http://www.youtube.com/watch?v=ie0waMJxnTs&feature=youtube_gdata_player", "kaUserLicense": "cc-by-nc-sa", "globalId": "vx041e77f7", "sha": "2868dd6d061ab71038a2c17a4a3e686711537102", "translatedDescription": "", "imageUrl": "https://img.youtube.com/vi/ie0waMJxnTs/hqdefault.jpg", "youtubeId": "ie0waMJxnTs", "contentKind": "Video", "readableId": "adding-fruit"}, {"translatedShortDisplayName": "Put togethe", "usesStreakSelection": false, "relativeUrl": "/exercise/put-together", "fileName": null, "authorName": "Gail Hargrave", "creationDate": "2014-05-05T02:30:17Z", "usesAssessmentItems": true, "kaUrl": "https://www.khanacademy.org/exercise/put-together", "vPosition": 1, "translatedTitle": "Put together", "isQuiz": false, "translatedDescriptionHtml": "", "id": "xaa196ff0", "displayName": "Put together", "trackingDocumentUrl": null, "descriptionHtml": "", "sha": "4f6e5668cf07f9f767d5bebe46dda60fdc128818", "tags": [], "progressKey": "exaa196ff0", "editSlug": "edit/e/xaa196ff0", "summative": false, "live": true, "translatedDescription": "", "prettyDisplayName": "Put together", "deletedModTime": null, "allAssessmentItems": [{"sha": "172d5113a751ab1c5974ae27ec8c4e214b4b2dd5", "live": true, "id": "xc687e6812d791813"}, {"sha": "dee6275089f8c2855746420a2cff55c60d9b4fac", "live": true, "id": "x2386e84adc114d09"}, {"sha": "af2f0fdef28f2dbc4d963a744b7fa54538d3d38f", "live": true, "id": "x18d87bed31e97136"}, {"sha": "a4e8a99a4c85d3e81bf52d3c3b50abc80b2b9226", "live": true, "id": "x9e8332d0e5402a9a"}, {"sha": "13a03aa6c2cafb5a54a271eeb074abc9f8827c8a", "live": true, "id": "x4bbf05cc59ab7083"}, {"sha": "13a1357ed725b0fc916f1192b85d630735f3419d", "live": true, "id": "x1f031ef6c73a2b6b"}, {"sha": "c293d2acbfb74d3299cb7ff1c6687f876e0e6089", "live": true, "id": "x0d49ad87aae5331a"}, {"sha": "85d7bf84b94442354346950ec99fcc6128f0d031", "live": true, "id": "x91d7425dde36d257"}, {"sha": "7f88d10f631d7f3429fa6591505204cdcec21d8b", "live": true, "id": "x36da28bc21231fe9"}, {"sha": "b25374c42e2cbfc93a910ba48df1856547cbaf0d", "live": true, "id": "xcddbad295b570612"}, {"sha": "1444c02a2c0c322f5fea214679da374efb511a7c", "live": true, "id": "xbf44e624e89367ed"}, {"sha": "ea4e8e48eb51c27535eaba11708c711978e601f3", "live": true, "id": "xa13605f6fd5e02e0"}, {"sha": "ba1551f3b3e2a6e5e664d741011a366b9e7043a5", "live": true, "id": "x053b396db3a53bf4"}, {"sha": "d83d54ca0de572230f282af24cfbe399301c5574", "live": true, "id": "x81af65526c333a44"}, {"sha": "17808884468705e1d7fd98603aa513fee789b5ae", "live": true, "id": "xe524927e0a9ba870"}, {"sha": "389969fd6fa8904cc777b89b7a7ce32fef85bed2", "live": true, "id": "x832edd1bef32c3eb"}, {"sha": "8ab3aab1d29e731c72c0aec9f1ffe178161d7623", "live": true, "id": "x8d135135af7f8a48"}, {"sha": "369e8003c25c9be3170de9ee414287e68bf24d41", "live": true, "id": "x3e89d57bfe6721db"}, {"sha": "177f1d4b0123950504936b01260dc20c2a8cdc74", "live": true, "id": "x10750b1f5b16e06f"}, {"sha": "429be5bbf7f27de4e3f99dbdf1ca38e970dbcbcf", "live": true, "id": "x3dd06c07942ab843"}], "description": "", "translatedPrettyDisplayName": "Put together", "nodeSlug": "e/put-together", "deleted": false, "backupTimestamp": null, "problemTypes": [{"items": [{"sha": "172d5113a751ab1c5974ae27ec8c4e214b4b2dd5", "live": true, "id": "xc687e6812d791813"}, {"sha": "dee6275089f8c2855746420a2cff55c60d9b4fac", "live": true, "id": "x2386e84adc114d09"}, {"sha": "af2f0fdef28f2dbc4d963a744b7fa54538d3d38f", "live": true, "id": "x18d87bed31e97136"}, {"sha": "a4e8a99a4c85d3e81bf52d3c3b50abc80b2b9226", "live": true, "id": "x9e8332d0e5402a9a"}, {"sha": "13a03aa6c2cafb5a54a271eeb074abc9f8827c8a", "live": true, "id": "x4bbf05cc59ab7083"}, {"sha": "13a1357ed725b0fc916f1192b85d630735f3419d", "live": true, "id": "x1f031ef6c73a2b6b"}, {"sha": "c293d2acbfb74d3299cb7ff1c6687f876e0e6089", "live": true, "id": "x0d49ad87aae5331a"}, {"sha": "85d7bf84b94442354346950ec99fcc6128f0d031", "live": true, "id": "x91d7425dde36d257"}, {"sha": "7f88d10f631d7f3429fa6591505204cdcec21d8b", "live": true, "id": "x36da28bc21231fe9"}, {"sha": "b25374c42e2cbfc93a910ba48df1856547cbaf0d", "live": true, "id": "xcddbad295b570612"}], "name": "Type 1"}, {"items": [{"sha": "1444c02a2c0c322f5fea214679da374efb511a7c", "live": true, "id": "xbf44e624e89367ed"}, {"sha": "ea4e8e48eb51c27535eaba11708c711978e601f3", "live": true, "id": "xa13605f6fd5e02e0"}, {"sha": "ba1551f3b3e2a6e5e664d741011a366b9e7043a5", "live": true, "id": "x053b396db3a53bf4"}, {"sha": "d83d54ca0de572230f282af24cfbe399301c5574", "live": true, "id": "x81af65526c333a44"}, {"sha": "17808884468705e1d7fd98603aa513fee789b5ae", "live": true, "id": "xe524927e0a9ba870"}, {"sha": "389969fd6fa8904cc777b89b7a7ce32fef85bed2", "live": true, "id": "x832edd1bef32c3eb"}, {"sha": "8ab3aab1d29e731c72c0aec9f1ffe178161d7623", "live": true, "id": "x8d135135af7f8a48"}, {"sha": "369e8003c25c9be3170de9ee414287e68bf24d41", "live": true, "id": "x3e89d57bfe6721db"}, {"sha": "177f1d4b0123950504936b01260dc20c2a8cdc74", "live": true, "id": "x10750b1f5b16e06f"}, {"sha": "429be5bbf7f27de4e3f99dbdf1ca38e970dbcbcf", "live": true, "id": "x3dd06c07942ab843"}], "name": "Type 2"}], "curatedRelatedVideos": ["x041e77f7"], "covers": [], "hPosition": -16, "translatedDisplayName": "Put together", "kind": "Exercise", "sha1": "e57ba07b2eeae0f59ef2ca7d4bc98d6e96ca15bd", "name": "put-together", "prerequisites": ["how-many-objects-1"], "assessmentItemTags": ["ag5zfmtoYW4tYWNhZGVteXI2CxIRQXNzZXNzbWVudEl0ZW1UYWciATAMCxIRQXNzZXNzbWVudEl0ZW1UYWcYgICAgLvdqwoM", "ag5zfmtoYW4tYWNhZGVteXI2CxIRQXNzZXNzbWVudEl0ZW1UYWciATAMCxIRQXNzZXNzbWVudEl0ZW1UYWcYgICAwIKTqAoM"], "title": "Put together", "globalId": "exaa196ff0", "secondsPerFastProblem": 4.0, "shortDisplayName": "Put togethe", "imageUrl": "https://ka-exercise-screenshots.s3.amazonaws.com/put-together.png", "tutorialOnly": false, "currentRevisionKey": "4f6e5668cf07f9f767d5bebe46dda60fdc128818", "imageUrl_256": "https://ka-exercise-screenshots.s3.amazonaws.com/put-together_256.png", "contentId": "xaa196ff0", "contentKind": "Exercise"}, {"translatedShortDisplayName": "Take apart", "usesStreakSelection": false, "vPosition": 1, "relativeUrl": "/exercise/take-apart", "fileName": null, "authorName": "Gail Hargrave", "creationDate": "2014-05-08T23:50:19Z", "usesAssessmentItems": true, "kaUrl": "https://www.khanacademy.org/exercise/take-apart", "shortDisplayName": "Take apart", "translatedTitle": "Take apart", "isQuiz": false, "translatedDescriptionHtml": "", "id": "x6cc2a895", "displayName": "Take apart", "trackingDocumentUrl": null, "descriptionHtml": "", "doNotPublish": false, "tags": [], "progressKey": "ex6cc2a895", "editSlug": "edit/e/x6cc2a895", "summative": false, "live": true, "translatedDescription": "", "prettyDisplayName": "Take apart", "deletedModTime": null, "allAssessmentItems": [{"sha": "32a46d5e22dbc0dcaa6872d7daf15368b3135228", "live": true, "id": "x2662673ca79d8765"}, {"sha": "1cad31af0e0312eb61a7efc04bc49113d8298da8", "live": true, "id": "xcd6c08a555053e9b"}, {"sha": "e9efa7c4b13144842ea30ed5dfca356608dad3b7", "live": true, "id": "xadc88e10a544fb4a"}, {"sha": "6d5f1955878551b54b457a93d6176980b0f7fa41", "live": true, "id": "x7c5af7cc144dcc3c"}, {"sha": "8d357ca4c28f9db0225bee9d54dd63b427885fe2", "live": true, "id": "x4fc254c855013121"}, {"sha": "2b0c1adc6a40fd8c8dc8ef8f084c81dbd2655a78", "live": true, "id": "x32c1e8b901001401"}, {"sha": "dc3efc9f5235de1150f8c4374a90dda8722cbf28", "live": true, "id": "xa887475e6c65ed96"}, {"sha": "b919ed934bfb987e82436a134471c1705b9f9e7d", "live": true, "id": "xe65a9f7a554397a5"}, {"sha": "623fb2443fd93f79434a853ebb99430f42bda283", "live": true, "id": "x78a143acecc83029"}, {"sha": "d85c5208283855d44a8886ae2bf1ce1f053de623", "live": true, "id": "x1008ed5c965af944"}, {"sha": "018fa40f996e31473f8b73104d8b544afc9f81f4", "live": true, "id": "xda8fc2cfff97cc77"}], "description": "", "translatedPrettyDisplayName": "Take apart", "nodeSlug": "e/take-apart", "deleted": false, "backupTimestamp": null, "problemTypes": [{"items": [{"sha": "32a46d5e22dbc0dcaa6872d7daf15368b3135228", "live": true, "id": "x2662673ca79d8765"}, {"sha": "1cad31af0e0312eb61a7efc04bc49113d8298da8", "live": true, "id": "xcd6c08a555053e9b"}, {"sha": "e9efa7c4b13144842ea30ed5dfca356608dad3b7", "live": true, "id": "xadc88e10a544fb4a"}, {"sha": "6d5f1955878551b54b457a93d6176980b0f7fa41", "live": true, "id": "x7c5af7cc144dcc3c"}, {"sha": "8d357ca4c28f9db0225bee9d54dd63b427885fe2", "live": true, "id": "x4fc254c855013121"}, {"sha": "2b0c1adc6a40fd8c8dc8ef8f084c81dbd2655a78", "live": true, "id": "x32c1e8b901001401"}, {"sha": "dc3efc9f5235de1150f8c4374a90dda8722cbf28", "live": true, "id": "xa887475e6c65ed96"}, {"sha": "b919ed934bfb987e82436a134471c1705b9f9e7d", "live": true, "id": "xe65a9f7a554397a5"}, {"sha": "623fb2443fd93f79434a853ebb99430f42bda283", "live": true, "id": "x78a143acecc83029"}, {"sha": "d85c5208283855d44a8886ae2bf1ce1f053de623", "live": true, "id": "x1008ed5c965af944"}, {"sha": "018fa40f996e31473f8b73104d8b544afc9f81f4", "live": true, "id": "xda8fc2cfff97cc77"}], "name": "Type 1"}], "curatedRelatedVideos": ["x041e77f7"], "covers": [], "hPosition": -15, "translatedDisplayName": "Take apart", "kind": "Exercise", "sha1": "8d7c1b6b68c22bfdad23e68c4969cf20555d8151", "name": "take-apart", "prerequisites": ["put-together"], "assessmentItemTags": ["ag5zfmtoYW4tYWNhZGVteXI2CxIRQXNzZXNzbWVudEl0ZW1UYWciATAMCxIRQXNzZXNzbWVudEl0ZW1UYWcYgICAgLvdqwoM", "ag5zfmtoYW4tYWNhZGVteXI2CxIRQXNzZXNzbWVudEl0ZW1UYWciATAMCxIRQXNzZXNzbWVudEl0ZW1UYWcYgICAwIKTqAoM"], "title": "Take apart", "globalId": "ex6cc2a895", "secondsPerFastProblem": 4.0, "sha": "d1365e773fdde423399cebc9b04040577adaecbc", "imageUrl": "https://ka-exercise-screenshots.s3.amazonaws.com/take-apart.png", "tutorialOnly": false, "currentRevisionKey": "d1365e773fdde423399cebc9b04040577adaecbc", "imageUrl_256": "https://ka-exercise-screenshots.s3.amazonaws.com/take-apart_256.png", "contentId": "x6cc2a895", "contentKind": "Exercise"}, {"translatedYoutubeId": "A-ykhY_IoaU", "relativeUrl": "/video/making-5", "hasQuestions": false, "creationDate": "2014-05-08T23:49:35Z", "downloadUrls": {"mp4": "http://s3.amazonaws.com/KA-youtube-converted/A-ykhY_IoaU.mp4/A-ykhY_IoaU.mp4", "png": "http://s3.amazonaws.com/KA-youtube-converted/A-ykhY_IoaU.mp4/A-ykhY_IoaU.png", "m3u8": "http://s3.amazonaws.com/KA-youtube-converted/A-ykhY_IoaU.m3u8/A-ykhY_IoaU.m3u8"}, "kaUrl": "https://www.khanacademy.org/video/making-5", "duration": 246, "translatedTitle": "Making 5", "translatedDescriptionHtml": "", "id": "x65eda1aa", "descriptionHtml": "", "doNotPublish": false, "progressKey": "vx65eda1aa", "editSlug": "edit/v/x65eda1aa", "authorNames": [], "deletedModTime": null, "description": "Description", "extraProperties": null, "nodeSlug": "v/making-5", "deleted": false, "backupTimestamp": null, "dateAdded": "2014-05-08T23:50:09Z", "translatedYoutubeLang": "en", "kind": "Video", "url": "http://www.youtube.com/watch?v=A-ykhY_IoaU&feature=youtube_gdata_player", "title": "Making 5", "kaUserLicense": "cc-by-nc-sa", "globalId": "vx65eda1aa", "sha": "023d1ecdf4c9e1d7723a42809f5a063e5e9945ba", "translatedDescription": "", "imageUrl": "https://img.youtube.com/vi/A-ykhY_IoaU/hqdefault.jpg", "keywords": "", "youtubeId": "A-ykhY_IoaU", "contentId": "x65eda1aa", "contentKind": "Video", "readableId": "making-5"}, {"translatedShortDisplayName": "Making five", "usesStreakSelection": false, "vPosition": 2, "relativeUrl": "/exercise/making-five", "fileName": null, "authorName": "Erin Kats", "creationDate": "2014-05-08T23:49:55Z", "usesAssessmentItems": true, "kaUrl": "https://www.khanacademy.org/exercise/making-five", "shortDisplayName": "Making five", "translatedTitle": "Making five", "isQuiz": false, "translatedDescriptionHtml": "", "id": "x442d4783", "displayName": "Making five", "trackingDocumentUrl": null, "descriptionHtml": "", "doNotPublish": false, "tags": [], "progressKey": "ex442d4783", "editSlug": "edit/e/x442d4783", "summative": false, "translatedDescription": "", "prettyDisplayName": "Making five", "deletedModTime": null, "allAssessmentItems": [{"sha": "d966b2ef3a145cd3705d79d1b42bc038cc0137c2", "live": true, "id": "xebba2ef48762fd43"}, {"sha": "5ab4bcced90cff40cd8fcb200576e0fd608dc32f", "live": true, "id": "x6cd3578c2485899c"}, {"sha": "153a9ee0a50c1e41a414f3b81c6e0022038984be", "live": true, "id": "xeae1943c494ab2b8"}, {"sha": "22130620bb45daf3f41c2571c3b857f51c8b7928", "live": true, "id": "x52365d76208aef90"}, {"sha": "4c1df183050d916bb676c23729c3ecadfa9c67ec", "live": true, "id": "x8f0b7aeca31dac35"}, {"sha": "01739deb2a68c2535dfd9b3657430f954ebe30e3", "live": true, "id": "xa053a647de32658a"}, {"sha": "1a6daa9c06f12907342e160db7338f6889f1548a", "live": true, "id": "x72cd7d06b97f1628"}, {"sha": "1907042e78f854824782706afe9a698c9b9a7be9", "live": true, "id": "x94f1e0b2c24b0d78"}, {"sha": "1c7816df8c47b9cb3f8322a2966c61d2c48c4361", "live": true, "id": "x40c2dfbbd21a4621"}, {"sha": "ece946e50c983438694fa44996a3c346fd0a47d0", "live": true, "id": "x2512f993b7d4cf9a"}], "description": "", "translatedPrettyDisplayName": "Making five", "nodeSlug": "e/making-five", "deleted": false, "backupTimestamp": null, "problemTypes": [{"items": [{"sha": "d966b2ef3a145cd3705d79d1b42bc038cc0137c2", "live": true, "id": "xebba2ef48762fd43"}, {"sha": "5ab4bcced90cff40cd8fcb200576e0fd608dc32f", "live": true, "id": "x6cd3578c2485899c"}, {"sha": "153a9ee0a50c1e41a414f3b81c6e0022038984be", "live": true, "id": "xeae1943c494ab2b8"}, {"sha": "22130620bb45daf3f41c2571c3b857f51c8b7928", "live": true, "id": "x52365d76208aef90"}, {"sha": "4c1df183050d916bb676c23729c3ecadfa9c67ec", "live": true, "id": "x8f0b7aeca31dac35"}, {"sha": "01739deb2a68c2535dfd9b3657430f954ebe30e3", "live": true, "id": "xa053a647de32658a"}, {"sha": "1a6daa9c06f12907342e160db7338f6889f1548a", "live": true, "id": "x72cd7d06b97f1628"}, {"sha": "1907042e78f854824782706afe9a698c9b9a7be9", "live": true, "id": "x94f1e0b2c24b0d78"}, {"sha": "1c7816df8c47b9cb3f8322a2966c61d2c48c4361", "live": true, "id": "x40c2dfbbd21a4621"}, {"sha": "ece946e50c983438694fa44996a3c346fd0a47d0", "live": true, "id": "x2512f993b7d4cf9a"}], "name": " Making 5"}], "curatedRelatedVideos": ["x65eda1aa"], "covers": [], "hPosition": -18, "translatedDisplayName": "Making five", "kind": "Exercise", "sha1": "1d23a96adbc1f2b403ee87c6996ee062f2dfe6e4", "name": "making-five", "prerequisites": ["how-many-objects-1"], "assessmentItemTags": ["ag5zfmtoYW4tYWNhZGVteXI2CxIRQXNzZXNzbWVudEl0ZW1UYWciATAMCxIRQXNzZXNzbWVudEl0ZW1UYWcYgICAwIKTqAoM", "ag5zfmtoYW4tYWNhZGVteXI2CxIRQXNzZXNzbWVudEl0ZW1UYWciATAMCxIRQXNzZXNzbWVudEl0ZW1UYWcYgICAwNT0rQoM"], "title": "Making five", "globalId": "ex442d4783", "secondsPerFastProblem": 4.0, "sha": "dde2d8cd75d4b0c8dde1bca692ef50ebe5407695", "imageUrl": "https://ka-exercise-screenshots.s3.amazonaws.com/making-five.png", "tutorialOnly": false, "currentRevisionKey": "dde2d8cd75d4b0c8dde1bca692ef50ebe5407695", "imageUrl_256": "https://ka-exercise-screenshots.s3.amazonaws.com/making-five_256.png", "contentId": "x442d4783", "contentKind": "Exercise"}], "preRenderedId": "v/addition-introduction", "publishAuthorized": false, "contentId": "v/addition-introduction"},
+        {"loggedIn": false, "isDeveloper": null, "isVideo": true, "focusId": "addition-introduction", "showSpinoffs": false, "which": "video-questions", "focusKind": "video", "showDocumentation": false, "restrictPosting": false});
+    });
+    </script>
+
+
+
+<script crossorigin='anonymous' src='https://www.kastatic.org/genfiles/javascript/en/react-package-361ba1c22347034f7f2b5db2f8022301.js'></script>
+<script>PackageManager.setLoaded("react.js")</script>
+<script crossorigin='anonymous' src='https://www.kastatic.org/genfiles/javascript/en/video-package-c5c1b277291fa0f56a5e7cd157995575.js'></script>
+<script>PackageManager.setLoaded("video.js")</script>
+
+
+    </body>
+</html>
